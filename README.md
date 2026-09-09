@@ -11,7 +11,6 @@ image-w.png                 Dark-footer wordmark icon
 mcu-watch-log/              MCU site source
   index.html
   movie.png                 MCU favicon
-  preview.webp              Optional static collection preview
 netlify/functions/checklist.js
 scripts/build-sites.js
 dist/                       Generated Netlify publish output
@@ -21,10 +20,9 @@ dist/                       Generated Netlify publish output
 
 1. Create a top-level folder, for example `reading-list/`.
 2. Add `reading-list/index.html` with a useful `<title>`.
-3. Add `reading-list/preview.webp` for a collection thumbnail. Without it, the collection renders a placeholder.
-4. Run the build or deploy.
+3. Run the build or deploy.
 
-`scripts/build-sites.js` discovers top-level folders with an `index.html`, copies deployable static files into `dist/`, detects `preview.webp`, extracts declared favicons, then creates `dist/sites.json`. The root page uses that one catalog for cards, site count, and footer links. It never embeds child sites, so collection visits do not execute MCU code or trigger checklist reads.
+`scripts/build-sites.js` discovers top-level folders with an `index.html`, copies deployable static files into `dist/`, extracts declared favicons, then creates `dist/sites.json`. The root page uses that one catalog for cards, site count, and footer links. Each card loads its site's page in a lazy, visual-only iframe preview.
 
 ## Build and Deploy
 

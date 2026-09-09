@@ -41,13 +41,11 @@ const sites = fs.readdirSync(root, { withFileTypes: true })
     const indexPath = path.join(root, entry.name, "index.html");
     if (!fs.existsSync(indexPath)) return null;
     const html = fs.readFileSync(indexPath, "utf8");
-    const previewPath = path.join(root, entry.name, "preview.webp");
     copyDirectory(path.join(root, entry.name), path.join(dist, entry.name));
     return {
       name: titleFrom(html, entry.name),
       path: `/${encodeURIComponent(entry.name)}/`,
-      favicon: assetFrom(html, entry.name, /<link\b(?=[^>]*\brel=["'][^"']*\bicon\b[^"']*["'])[^>]*\bhref=["']([^"']+)["'][^>]*>/i),
-      preview: fs.existsSync(previewPath) ? `/${encodeURIComponent(entry.name)}/preview.webp` : null
+      favicon: assetFrom(html, entry.name, /<link\b(?=[^>]*\brel=["'][^"']*\bicon\b[^"']*["'])[^>]*\bhref=["']([^"']+)["'][^>]*>/i)
     };
   })
   .filter(Boolean)

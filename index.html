@@ -87,8 +87,7 @@
     .browser { height: 100%; overflow: hidden; border: 1px solid #d7d9de; border-radius: 9px; background: #f3eedf; box-shadow: 0 4px 12px rgba(0, 0, 0, .08); }
     .browser-bar { height: 29px; display: flex; align-items: center; gap: 5px; padding: 0 10px; border-bottom: 1px solid #d7d0c1; background: #fffdf7; }
     .browser-bar i { width: 6px; height: 6px; border-radius: 50%; background: #a6a294; }
-    .site-preview img { width: 100%; height: 100%; display: block; object-fit: cover; }
-    .preview-empty { width: 100%; height: 100%; display: grid; place-items: center; color: var(--muted); background: var(--surface-soft); font-size: 14px; }
+    .site-frame { width: 400%; height: calc(400% - 116px); border: 0; transform: scale(.25); transform-origin: top left; pointer-events: none; }
     .site-copy { position: relative; pointer-events: none; padding: 24px; }
     .site-meta { display: flex; align-items: center; gap: 8px; color: var(--ink); font-size: 18px; font-weight: 600; letter-spacing: -.03em; }
     .site-label { display: inline-flex; align-items: center; gap: 8px; }
@@ -207,18 +206,14 @@
       preview.setAttribute("aria-hidden", "true");
       const browser = document.createElement("div");
       browser.className = "browser";
-      if (site.preview) {
-        const image = document.createElement("img");
-        image.src = site.preview;
-        image.alt = "";
-        image.loading = "lazy";
-        browser.append(image);
-      } else {
-        const empty = document.createElement("div");
-        empty.className = "preview-empty";
-        empty.textContent = "Preview unavailable";
-        browser.append(empty);
-      }
+      const frame = document.createElement("iframe");
+      frame.className = "site-frame";
+      frame.src = site.path;
+      frame.title = `${site.name} preview`;
+      frame.loading = "lazy";
+      frame.tabIndex = -1;
+      frame.setAttribute("aria-hidden", "true");
+      browser.append(frame);
       preview.append(browser);
 
       const copy = document.createElement("div");
