@@ -3,6 +3,11 @@ const JSONSTORAGE_API_KEY = process.env.JSONSTORAGE_API_KEY;
 
 const requests = new Map();
 
+const BROWSER_USER_AGENT =
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) " +
+  "AppleWebKit/537.36 (KHTML, like Gecko) " +
+  "Chrome/153.0.0.0 Safari/537.36";
+
 function jsonResponse(statusCode, data, extraHeaders = {}) {
   return {
     statusCode,
@@ -26,7 +31,7 @@ function storageUrl({ authenticated = false } = {}) {
     return null;
   }
 
-  // Prevent duplicate/old apiKey values from being used.
+  // Remove any old/duplicate apiKey from the saved URL.
   url.searchParams.delete("apiKey");
 
   if (authenticated) {
@@ -40,13 +45,12 @@ function storageUrl({ authenticated = false } = {}) {
 function rateLimited(event, limit) {
   const now = Date.now();
 
-  const key =
-    `${event.httpMethod}:` +
-    (
-      event.headers?.["x-nf-client-connection-ip"] ||
-      event.headers?.["x-forwarded-for"] ||
-      "unknown"
-    );
+  const ip =
+    event.headers?.["x-nf-client-connection-ip"] ||
+    event.headers?.["x-forwarded-for"] ||
+    "unknown";
+
+  const key = `${event.httpMethod}:${ip}`;
 
   const recent = (requests.get(key) || []).filter(
     time => now - time < 60_000
@@ -110,6 +114,13 @@ function validateChecklist(checklist) {
   }
 }
 
+function buildReadHeaders() {
+  return {
+    Accept: "application/json",
+    "User-Agent": BROWSER_USER_AGENT
+  };
+}
+
 async function parseChecklistResponse(response) {
   if (!response.ok) {
     const error = new Error(
@@ -117,7 +128,6 @@ async function parseChecklistResponse(response) {
     );
 
     error.upstreamStatus = response.status;
-
     throw error;
   }
 
@@ -127,11 +137,10 @@ async function parseChecklistResponse(response) {
     checklist = await response.json();
   } catch {
     const error = new Error(
-      "JSONStorage returned something that is not valid JSON"
+      "JSONStorage returned invalid JSON"
     );
 
     error.upstreamStatus = response.status;
-
     throw error;
   }
 
@@ -144,25 +153,26 @@ async function readChecklist() {
   const publicUrl = storageUrl();
 
   if (!publicUrl) {
-    const error = new Error("JSONSTORAGE_URL is missing or invalid");
+    const error = new Error(
+      "JSONSTORAGE_URL is missing or invalid"
+    );
+
     error.configurationError = true;
     throw error;
   }
 
   /*
-   * JSONStorage allows GET without authentication for public items.
-   * Try that first.
+   * First try the public URL.
    */
   let response = await fetch(publicUrl, {
     method: "GET",
-    headers: {
-      Accept: "application/json"
-    },
+    headers: buildReadHeaders(),
     cache: "no-store"
   });
 
   /*
-   * If the item is private, retry using the API key.
+   * If JSONStorage requires authentication,
+   * retry using the configured API key.
    */
   if (
     (response.status === 401 || response.status === 403) &&
@@ -174,9 +184,7 @@ async function readChecklist() {
 
     response = await fetch(authenticatedUrl, {
       method: "GET",
-      headers: {
-        Accept: "application/json"
-      },
+      headers: buildReadHeaders(),
       cache: "no-store"
     });
   }
@@ -195,7 +203,6 @@ async function writeChecklist(checklist) {
     );
 
     error.configurationError = true;
-
     throw error;
   }
 
@@ -203,7 +210,8 @@ async function writeChecklist(checklist) {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
-      Accept: "application/json"
+      Accept: "application/json",
+      "User-Agent": BROWSER_USER_AGENT
     },
     body: JSON.stringify(checklist)
   });
@@ -214,7 +222,6 @@ async function writeChecklist(checklist) {
     );
 
     error.upstreamStatus = response.status;
-
     throw error;
   }
 }
@@ -222,6 +229,9 @@ async function writeChecklist(checklist) {
 exports.handler = async function (event) {
   const method = event.httpMethod;
 
+  /*
+   * OPTIONS
+   */
   if (method === "OPTIONS") {
     return {
       statusCode: 204,
@@ -232,6 +242,9 @@ exports.handler = async function (event) {
     };
   }
 
+  /*
+   * Unsupported method
+   */
   if (method !== "GET" && method !== "PUT") {
     return jsonResponse(
       405,
@@ -245,6 +258,9 @@ exports.handler = async function (event) {
     );
   }
 
+  /*
+   * Basic per-instance rate limiting
+   */
   if (
     rateLimited(
       event,
@@ -257,6 +273,9 @@ exports.handler = async function (event) {
     });
   }
 
+  /*
+   * Validate configuration
+   */
   if (!storageUrl()) {
     return jsonResponse(500, {
       ok: false,
@@ -266,7 +285,7 @@ exports.handler = async function (event) {
 
   try {
     /*
-     * GET
+     * GET CHECKLIST
      */
     if (method === "GET") {
       const checklist = await readChecklist();
@@ -278,12 +297,14 @@ exports.handler = async function (event) {
     }
 
     /*
-     * PUT
+     * PUT / UPDATE ITEM
      */
     let body;
 
     try {
-      body = JSON.parse(event.body || "");
+      body = JSON.parse(
+        event.body || ""
+      );
     } catch {
       return jsonResponse(400, {
         ok: false,
@@ -324,7 +345,6 @@ exports.handler = async function (event) {
         done: item.done
       }
     });
-
   } catch (error) {
     console.error(
       "[checklist]",
@@ -346,18 +366,9 @@ exports.handler = async function (event) {
           : "STORAGE_WRITE_FAILED"
     };
 
-    /*
-     * This makes debugging much easier.
-     *
-     * Example:
-     * {
-     *   "ok": false,
-     *   "error": "STORAGE_READ_FAILED",
-     *   "upstreamStatus": 404
-     * }
-     */
     if (Number.isInteger(error.upstreamStatus)) {
-      result.upstreamStatus = error.upstreamStatus;
+      result.upstreamStatus =
+        error.upstreamStatus;
     }
 
     return jsonResponse(
