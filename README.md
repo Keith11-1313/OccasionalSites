@@ -1,6 +1,6 @@
 # OccasionalSites
 
-Small static sites hosted on Netlify. The MCU Watch Log is the only dynamic site; its checklist data stays in JSONStorage behind one Netlify Function. It is intentionally public and collaboratively editable without accounts or login.
+Small static sites hosted on Netlify. The MCU Watch Log is the only dynamic site; its checklist data stays in JSONStorage behind one Netlify Edge Function. It is intentionally public and collaboratively editable without accounts or login.
 
 ## Structure
 
@@ -11,7 +11,7 @@ image-w.png                 Dark-footer wordmark icon
 mcu-watch-log/              MCU site source
   index.html
   movie.png                 MCU favicon
-netlify/functions/checklist.js
+netlify/edge-functions/checklist.js
 scripts/build-sites.js
 dist/                       Generated Netlify publish output
 ```
@@ -32,7 +32,7 @@ node scripts/build-sites.js
 
 Netlify runs the same command and publishes only `dist/`. It does not publish `.env*`, `netlify/`, `scripts/`, `node_modules/`, source documentation, or `dist/` recursively.
 
-Set these Netlify environment variables:
+Set these Netlify environment variables with the `Functions` scope:
 
 ```text
 JSONSTORAGE_URL=https://api.jsonstorage.net/v1/json/YOUR_USER_ID/YOUR_ITEM_ID
