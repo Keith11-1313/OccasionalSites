@@ -2,3 +2,13 @@
   command = "node scripts/build-sites.js"
   publish = "dist"
   functions = "netlify/functions"
+
+[[redirects]]
+  from = "/mcu-watch-log"
+  to = "/mcuarchive/"
+  status = 301
+
+[[redirects]]
+  from = "/mcu-watch-log/*"
+  to = "/mcuarchive/:splat"
+  status = 301

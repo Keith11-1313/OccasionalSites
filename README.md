@@ -1,6 +1,6 @@
 # OccasionalSites
 
-Small static sites hosted on Netlify. The MCU Watch Log is the only dynamic site; its checklist data stays in JSONStorage behind one Netlify Edge Function. It is intentionally public and collaboratively editable without accounts or login.
+Small static sites hosted on Netlify. The MCU Archive is the only dynamic site; its checklist data stays in JSONStorage behind one Netlify Edge Function. It is intentionally public and collaboratively editable without accounts or login.
 
 ## Structure
 
@@ -8,7 +8,7 @@ Small static sites hosted on Netlify. The MCU Watch Log is the only dynamic site
 index.html                  Collection landing page
 image-b.png                 Light-page wordmark icon
 image-w.png                 Dark-footer wordmark icon
-mcu-watch-log/              MCU site source
+mcuarchive/              MCU site source
   index.html
   movie.png                 MCU favicon
 netlify/edge-functions/checklist.js
