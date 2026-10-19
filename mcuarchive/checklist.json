@@ -2495,9 +2495,10 @@
       "title": "Avengers: Doomsday",
       "year": "December 18, 2026",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/avengersdoomsday_lob_crd_02.jpg",
+      "poster": "https://cdn.marvel.com/content/1x/avengersdoomsday_lob_crd_03.webp",
       "kind": "movie",
-      "upcoming": true
+      "upcoming": true,
+      "posterSource": "https://www.marvel.com/movies/avengers-doomsday"
     },
     {
       "id": "p6-08",

@@ -276,11 +276,14 @@
       background-size: 18px 18px;
     }
 
+    #nextPoster { position: relative; overflow: hidden; }
+    #nextPoster img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: var(--paper-card); }
+
     /* ---------- stats ---------- */
 
     .stats {
       display: grid;
-      grid-template-columns: 1.4fr 1fr 1fr;
+      grid-template-columns: 1.4fr 1fr;
       border: 1px solid var(--line);
       border-top: 0;
       background: rgba(255, 253, 247, .86);
@@ -529,32 +532,48 @@
     /* ---------- status/footer ---------- */
 
     .status {
-      position: fixed;
-      z-index: 70;
-      right: 16px;
-      bottom: 16px;
-      max-width: calc(100vw - 32px);
-      min-height: 36px;
-      display: flex;
-      align-items: center;
-      padding: 8px 12px;
-      color: #fff;
-      background: var(--ink);
-      border: 1px solid rgba(255,255,255,.18);
-      box-shadow: 4px 4px 0 rgba(21, 83, 199, .24);
-      font: 750 12px/1.3 "Courier New", monospace;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }
+
+    .status.is-error {
+      position: static;
+      width: auto;
+      height: auto;
+      overflow: visible;
+      clip-path: none;
+      white-space: normal;
+      margin-top: 24px;
+      padding: 12px 16px;
+      color: var(--ink);
+      background: var(--danger-bg);
+      border: 1px solid var(--danger-line);
     }
 
     footer {
       margin-top: 66px;
       padding: 25px 2px 8px;
       display: flex;
-      justify-content: space-between;
-      gap: 18px;
+      justify-content: flex-start;
+      gap: 8px 14px;
       flex-wrap: wrap;
       color: #5f5b54;
       border-top: 1px solid var(--line);
       font: 700 11px/1.4 "Courier New", monospace;
+    }
+
+    .footer-sources {
+      margin-left: auto;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 4px 14px;
+      text-align: right;
     }
 
     /* ---------- tablet ---------- */
@@ -577,7 +596,7 @@
       }
 
       .stats {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
       }
 
       .stat:first-child {
@@ -630,7 +649,8 @@
       }
 
       .nav-link {
-        display: none;
+        display: inline-flex;
+        padding-inline: 8px;
       }
 
       .nav-button {
@@ -795,11 +815,6 @@
         margin-top: auto;
       }
 
-      .status {
-        right: 10px;
-        bottom: 10px;
-      }
-
       footer {
         margin-top: 48px;
       }
@@ -853,9 +868,7 @@
     <div class="nav-shell">
       <nav class="nav" aria-label="Main navigation">
         <div class="brand">MCU Archive</div>
-        <a class="nav-link" href="#top">Home</a>
-        <a class="nav-link" href="#checklist">Phases</a>
-        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="/">Home</a>
         <button class="nav-button" type="button" onclick="loadChecklist()">Refresh</button>
       </nav>
     </div>
@@ -870,11 +883,9 @@
         </p>
       </div>
 
-      <div class="hero-paper" aria-hidden="true">
-        <div class="blueprint">
-          SHARED<br>
-          WATCH<br>
-          ARCHIVE
+      <div class="hero-paper">
+        <div class="blueprint" id="nextPoster" role="img" aria-label="Loading next title">
+          Loading next title…
         </div>
       </div>
     </section>
@@ -893,24 +904,20 @@
         <strong class="stat-value">Release</strong>
       </div>
 
-      <div class="stat">
-        <span class="stat-label">SHARED WITH</span>
-        <strong class="stat-value">N people</strong>
-      </div>
     </section>
 
+    <div class="status" id="status" role="status" aria-live="polite">Not connected</div>
     <main id="checklist"></main>
 
     <footer id="about">
       <span>MCU ARCHIVE / SHARED CHECKLIST</span>
-      <span>SAVED WITH NETLIFY BLOBS</span>
+      <div class="footer-sources">
       <span>Episode data: <a href="https://www.tvmaze.com/" target="_blank" rel="noopener noreferrer">TVmaze</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA</a></span>
+      <span>Catalog &amp; posters: <a href="https://www.marvel.com/" target="_blank" rel="noopener noreferrer">Marvel</a> · Episode schedule: <a href="https://www.disneyplus.com/" target="_blank" rel="noopener noreferrer">Disney+</a> · Release dates &amp; audience ratings: <a href="https://www.rottentomatoes.com/" target="_blank" rel="noopener noreferrer">Rotten Tomatoes</a></span>
+      </div>
     </footer>
   </div>
 
-  <div class="status" id="status" role="status" aria-live="polite">
-    Not connected
-  </div>
 
   <script>
     const DB_URL = "/.netlify/functions/checklist";
@@ -1224,6 +1231,7 @@
     }
 
     function updateOverallProgress() {
+      updateNextPoster();
       document.querySelectorAll(".phase").forEach(section => {
         const items = checklist.items.filter(item => "phase-" + item.phase === section.id);
         section.querySelector(".phase-count").textContent = items.filter(item => item.done).length + " / " + items.length + " watched";
@@ -1233,10 +1241,34 @@
       const percent = total ? (done / total) * 100 : 0;
 
       document.getElementById("progress").textContent =
-        `${done} / ${total} watched`;
+        `${done} / ${total} watched · ${Math.round(percent)}%`;
 
       document.getElementById("progressBar").style.width =
         `${percent}%`;
+    }
+
+    function updateNextPoster() {
+      const frame = document.getElementById("nextPoster");
+      const next = progressAvailable && checklist.items.find(item =>
+        !item.done && !isUnreleased(item) &&
+        (!item.episodes || item.episodes.some(episode => !episode.done && !isUnreleased(episode)))
+      );
+      const label = !progressAvailable ? "Saved progress unavailable" : next ? "Next to watch: " + next.title : "All available titles watched";
+      frame.setAttribute("aria-label", label);
+      frame.title = label;
+      if (frame.dataset.nextId === (next?.id || label)) return;
+      frame.dataset.nextId = next?.id || label;
+      frame.replaceChildren();
+      if (next?.poster) {
+        const image = document.createElement("img");
+        image.src = next.poster;
+        image.alt = "";
+        image.referrerPolicy = "no-referrer";
+        image.addEventListener("error", () => { frame.textContent = label; }, { once: true });
+        frame.appendChild(image);
+      } else {
+        frame.textContent = label;
+      }
     }
 
     function showError(title, message) {
@@ -1249,7 +1281,9 @@
     }
 
     function setStatus(text) {
-      document.getElementById("status").textContent = text;
+      const status = document.getElementById("status");
+      status.textContent = text;
+      status.classList.toggle("is-error", !["Synced", "Loading…", "Saving…", "Not connected"].includes(text));
     }
 
     function validateChecklist(items) {
