@@ -44,3 +44,7 @@ Run node scripts/refresh-audience-ratings.mjs to produce an ignored research fil
 ## Full release dates
 
 64 year-only labels were replaced with full month/day/year dates on 19 October 2026. Movies use their Rotten Tomatoes release date, and series use the explicit Season Info Release Date for that season. The review module releaseDate is not a reliable season premiere field and was excluded for series. Each changed entry records releaseDateSource. Existing full-date labels were retained. Dates follow the source release convention (movie theatrical release or season premiere); they do not claim a Philippine release date. Card source links and audience labels were removed at the users request; provenance remains in the catalog.
+
+## Maintenance and verification boundary
+
+This file preserves the catalog research record. The 19 October 2026 documentation audit checked the stored catalog structure and implementation; it did not refetch the external sources above. Treat statements about verification dates as historical research notes. Current maintenance commands, API rules and progress behavior are documented in [MCU Archive maintenance](mcu-archive.md); validation boundaries are in [verification](verification.md).

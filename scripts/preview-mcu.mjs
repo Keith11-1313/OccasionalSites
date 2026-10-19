@@ -14,7 +14,7 @@ http.createServer(async (req,res)=>{
   try {
     if(req.url.startsWith("/.netlify/functions/checklist")) {
       const chunks=[];for await(const chunk of req)chunks.push(chunk);
-      const result=await handler(new Request("http://localhost:8890"+req.url,{method:req.method,headers:req.headers,...(req.method==="PUT"&&{body:Buffer.concat(chunks)})}));
+      const result=await handler(new Request("http://localhost:8888"+req.url,{method:req.method,headers:req.headers,...(req.method==="PUT"&&{body:Buffer.concat(chunks)})}));
       res.writeHead(result.status,Object.fromEntries(result.headers));res.end(await result.text());return;
     }
     let path=decodeURIComponent(new URL(req.url,"http://localhost").pathname);
@@ -24,4 +24,4 @@ http.createServer(async (req,res)=>{
     const data=await readFile(file);
     res.setHeader("content-type",({".html":"text/html; charset=utf-8",".json":"application/json",".png":"image/png"})[extname(file)]||"application/octet-stream");res.end(data);
   }catch{res.writeHead(404);res.end("Not found");}
-}).listen(8890,"127.0.0.1",()=>console.log("MCU local preview: http://127.0.0.1:8890/mcuarchive/"));
+}).listen(8888,"127.0.0.1",()=>console.log("MCU local preview: http://127.0.0.1:8888/mcuarchive/"));
