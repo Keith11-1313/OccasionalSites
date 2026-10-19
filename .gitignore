@@ -3,6 +3,7 @@
 !.env.example
 
 node_modules/
+.migration/
 .netlify/
 
 sites.json

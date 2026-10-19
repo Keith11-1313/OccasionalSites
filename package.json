@@ -1,0 +1,11 @@
+{
+  "name": "occasional-sites",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-sites.js",
+    "test": "node --test scripts/checklist.test.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^11.0.3"
+  }
+}

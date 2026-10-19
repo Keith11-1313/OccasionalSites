@@ -1,0 +1,493 @@
+{
+  "title": "MCU Watch Checklist",
+  "items": [
+    {
+      "id": "p1-01",
+      "phase": 1,
+      "title": "Iron Man",
+      "year": "2008",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/ironman_lob_crd_01_3.jpg"
+    },
+    {
+      "id": "p1-02",
+      "phase": 1,
+      "title": "The Incredible Hulk",
+      "year": "2008",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/theincrediblehulk_lob_crd_03.jpg"
+    },
+    {
+      "id": "p1-04",
+      "phase": 1,
+      "title": "Iron Man 2",
+      "year": "2010",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/ironman2_lob_crd_01_3.jpg"
+    },
+    {
+      "id": "p1-05",
+      "phase": 1,
+      "title": "Thor",
+      "year": "2011",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/thor_lob_crd_01.jpg"
+    },
+    {
+      "id": "p1-07",
+      "phase": 1,
+      "title": "Captain America: The First Avenger",
+      "year": "2011",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/captainamerica_lob_crd_01.jpg"
+    },
+    {
+      "id": "p1-08",
+      "phase": 1,
+      "title": "The Avengers",
+      "year": "2012",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/theavengers_lob_crd_03.jpg"
+    },
+    {
+      "id": "p2-01",
+      "phase": 2,
+      "title": "Iron Man 3",
+      "year": "2013",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/ironman3_lob_crd_01_10.jpg"
+    },
+    {
+      "id": "p2-03",
+      "phase": 2,
+      "title": "Thor: The Dark World",
+      "year": "2013",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/thorthedarkworld_lob_crd_02_1.jpg"
+    },
+    {
+      "id": "p2-05",
+      "phase": 2,
+      "title": "Captain America: The Winter Soldier",
+      "year": "2014",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/captainamericathewintersoldier_lob_crd_01_1.jpg"
+    },
+    {
+      "id": "p2-06",
+      "phase": 2,
+      "title": "Guardians of the Galaxy",
+      "year": "2014",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/guardiansofthegalaxy_lob_crd_03.jpg"
+    },
+    {
+      "id": "p2-07",
+      "phase": 2,
+      "title": "Avengers: Age of Ultron",
+      "year": "2015",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/avengersageofultron_lob_crd_03.jpg"
+    },
+    {
+      "id": "p2-08",
+      "phase": 2,
+      "title": "Ant-Man",
+      "year": "2015",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/ant-man_lob_crd_01_8.jpg"
+    },
+    {
+      "id": "p3-01",
+      "phase": 3,
+      "title": "Captain America: Civil War",
+      "year": "2016",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/captainamericacivilwar_lob_crd_01_9.jpg"
+    },
+    {
+      "id": "p3-02",
+      "phase": 3,
+      "title": "Doctor Strange",
+      "year": "2016",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/doctorstrange_lob_crd_01_6.jpg"
+    },
+    {
+      "id": "p3-03",
+      "phase": 3,
+      "title": "Guardians of the Galaxy Vol. 2",
+      "year": "2017",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/guardiansofthegalaxyvol.2_lob_crd_01.jpg"
+    },
+    {
+      "id": "p3-04",
+      "phase": 3,
+      "title": "Spider-Man: Homecoming",
+      "year": "2017",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/spider-manhomecoming_lob_crd_02.jpg"
+    },
+    {
+      "id": "p3-05",
+      "phase": 3,
+      "title": "Thor: Ragnarok",
+      "year": "2017",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/thorragnarok_lob_crd_03.jpg"
+    },
+    {
+      "id": "p3-06",
+      "phase": 3,
+      "title": "Black Panther",
+      "year": "2018",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/blackpanther_lob_crd_01_4.jpg"
+    },
+    {
+      "id": "p3-07",
+      "phase": 3,
+      "title": "Avengers: Infinity War",
+      "year": "2018",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/avengersinfinitywar_lob_crd_02_1.jpg"
+    },
+    {
+      "id": "p3-08",
+      "phase": 3,
+      "title": "Ant-Man and the Wasp",
+      "year": "2018",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/ant-manthewasp_lob_crd_01.jpg"
+    },
+    {
+      "id": "p3-09",
+      "phase": 3,
+      "title": "Captain Marvel",
+      "year": "2019",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/captainmarvel_lob_crd_06.jpg"
+    },
+    {
+      "id": "p3-10",
+      "phase": 3,
+      "title": "Avengers: Endgame",
+      "year": "2019",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/avengersendgame_lob_crd_05_2.jpg"
+    },
+    {
+      "id": "p3-11",
+      "phase": 3,
+      "title": "Spider-Man: Far From Home",
+      "year": "2019",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/spider-manfarfromhome_lob_crd_04_3.jpg"
+    },
+    {
+      "id": "p4-01",
+      "phase": 4,
+      "title": "WandaVision, season 1",
+      "year": "2021",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/wandavision_lob_crd_06.jpg"
+    },
+    {
+      "id": "p4-02",
+      "phase": 4,
+      "title": "The Falcon and the Winter Soldier",
+      "year": "2021",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/falcws_lob_crd_03.jpg"
+    },
+    {
+      "id": "p4-03",
+      "phase": 4,
+      "title": "Loki, season 1",
+      "year": "2021",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/loki_lob_crd_04.jpg"
+    },
+    {
+      "id": "p4-04",
+      "phase": 4,
+      "title": "Black Widow",
+      "year": "2021",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/blackwidow_lob_crd_06.jpg"
+    },
+    {
+      "id": "p4-05",
+      "phase": 4,
+      "title": "What If...?, season 1",
+      "year": "2021",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/whatif_lob_crd_01.webp"
+    },
+    {
+      "id": "p4-06",
+      "phase": 4,
+      "title": "Shang-Chi and the Legend of the Ten Rings",
+      "year": "2021",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/shangchi_lob_crd_07.jpg"
+    },
+    {
+      "id": "p4-07",
+      "phase": 4,
+      "title": "Eternals",
+      "year": "2021",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/eternals_lob_crd_06.jpg"
+    },
+    {
+      "id": "p4-08",
+      "phase": 4,
+      "title": "Hawkeye",
+      "year": "2021",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/hawkeye_lob_crd_04.jpg"
+    },
+    {
+      "id": "p4-09",
+      "phase": 4,
+      "title": "Spider-Man: No Way Home",
+      "year": "2021",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/spider-mannowayhome_lob_crd_03.jpg"
+    },
+    {
+      "id": "p4-10",
+      "phase": 4,
+      "title": "Moon Knight",
+      "year": "2022",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/moonknight_lob_crd_05.jpg"
+    },
+    {
+      "id": "p4-11",
+      "phase": 4,
+      "title": "Doctor Strange in the Multiverse of Madness",
+      "year": "2022",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/doctorstrangeinthemultiverseofmadness_lob_crd_02_3.jpg"
+    },
+    {
+      "id": "p4-12",
+      "phase": 4,
+      "title": "Ms. Marvel",
+      "year": "2022",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/msmarvel_lob_crd_04.jpg"
+    },
+    {
+      "id": "p4-13",
+      "phase": 4,
+      "title": "Thor: Love and Thunder",
+      "year": "2022",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/thorloveandthunder_lob_crd_04.jpg"
+    },
+    {
+      "id": "p4-14",
+      "phase": 4,
+      "title": "She-Hulk: Attorney at Law",
+      "year": "2022",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/shehulk_lob_crd_04.jpg"
+    },
+    {
+      "id": "p4-15",
+      "phase": 4,
+      "title": "Werewolf by Night",
+      "year": "2022",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/werewolfbynight_lob_crd_01.jpg"
+    },
+    {
+      "id": "p4-16",
+      "phase": 4,
+      "title": "Black Panther: Wakanda Forever",
+      "year": "2022",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/blackpantherwakandaforever_lob_crd_06.jpg"
+    },
+    {
+      "id": "p4-17",
+      "phase": 4,
+      "title": "The Guardians of the Galaxy Holiday Special",
+      "year": "2022",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/theguardiansofthegalaxyholidayspecial_lob_crd_02.jpg"
+    },
+    {
+      "id": "p5-01",
+      "phase": 5,
+      "title": "Ant-Man and the Wasp: Quantumania",
+      "year": "2023",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/antmanandthewaspquantumania_lob_crd_03.jpg"
+    },
+    {
+      "id": "p5-02",
+      "phase": 5,
+      "title": "Guardians of the Galaxy Vol. 3",
+      "year": "2023",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/guardiansofthegalaxyvolume3_lob_crd_03.jpg"
+    },
+    {
+      "id": "p5-03",
+      "phase": 5,
+      "title": "Secret Invasion",
+      "year": "2023",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/secretinvasion_lob_crd_04.jpg"
+    },
+    {
+      "id": "p5-04",
+      "phase": 5,
+      "title": "Loki, season 2",
+      "year": "2023",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/lokis2_lob_crd_04.jpg"
+    },
+    {
+      "id": "p5-05",
+      "phase": 5,
+      "title": "The Marvels",
+      "year": "2023",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/themarvels_lob_crd_05.jpg"
+    },
+    {
+      "id": "p5-06",
+      "phase": 5,
+      "title": "What If...?, season 2",
+      "year": "2023",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/whatifs2_lob_crd_02.jpg"
+    },
+    {
+      "id": "p5-07",
+      "phase": 5,
+      "title": "Echo",
+      "year": "2024",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/echo_lob_crd_02.jpg"
+    },
+    {
+      "id": "p5-08",
+      "phase": 5,
+      "title": "Deadpool & Wolverine",
+      "year": "2024",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/deadpoolandwolverine_lob_crd_03.jpg"
+    },
+    {
+      "id": "p5-09",
+      "phase": 5,
+      "title": "Agatha All Along",
+      "year": "2024",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/agathaallalong_lob_crd_02.jpg"
+    },
+    {
+      "id": "p5-10",
+      "phase": 5,
+      "title": "Captain America: Brave New World",
+      "year": "2025",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/captainamericabravenewworld_lob_crd_05.jpg"
+    },
+    {
+      "id": "p5-11",
+      "phase": 5,
+      "title": "Daredevil: Born Again, season 1",
+      "year": "2025",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/daredevilbornagain_lob_crd_03.jpg"
+    },
+    {
+      "id": "p5-12",
+      "phase": 5,
+      "title": "Thunderbolts*",
+      "year": "2025",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/thenewavengers_lob_crd_01.jpg"
+    },
+    {
+      "id": "p5-13",
+      "phase": 5,
+      "title": "Ironheart",
+      "year": "2025",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/ironheart_lob_crd_04.jpg"
+    },
+    {
+      "id": "p6-01",
+      "phase": 6,
+      "title": "The Fantastic Four: First Steps",
+      "year": "2025",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/thefantasticfourfirststeps_lob_crd_03.jpg"
+    },
+    {
+      "id": "p6-02",
+      "phase": 6,
+      "title": "Eyes of Wakanda",
+      "year": "2025",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/eyesofwakanda_lob_crd_02.jpg"
+    },
+    {
+      "id": "p6-03",
+      "phase": 6,
+      "title": "Marvel Zombies",
+      "year": "2025",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/marvelzombies_lob_crd_03.jpg"
+    },
+    {
+      "id": "p6-04",
+      "phase": 6,
+      "title": "Wonder Man",
+      "year": "2026",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/wonderman_lob_crd_03.jpg"
+    },
+    {
+      "id": "p6-05",
+      "phase": 6,
+      "title": "Daredevil: Born Again, season 2",
+      "year": "2026",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/daredevilbornagains2_lob_crd_01.webp"
+    },
+    {
+      "id": "p6-06",
+      "phase": 6,
+      "title": "Spider-Man: Brand New Day",
+      "year": "July 31, 2026",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x_masonry/spidermanbrandnewday_online_1080x1350_ninjas_02.webp"
+    },
+    {
+      "id": "p6-07",
+      "phase": 6,
+      "title": "Avengers: Doomsday",
+      "year": "December 18, 2026",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/avengersdoomsday_lob_crd_02.jpg"
+    },
+    {
+      "id": "p6-08",
+      "phase": 6,
+      "title": "Avengers: Secret Wars",
+      "year": "December 17, 2027",
+      "optional": false,
+      "poster": "https://cdn.marvel.com/content/1x/avengerssecretwars_lob_crd_02.jpg"
+    }
+  ]
+}

@@ -894,7 +894,7 @@
 
     <footer id="about">
       <span>MCU ARCHIVE / SHARED CHECKLIST</span>
-      <span>ONE HTML FILE + JSON STORAGE</span>
+      <span>SAVED WITH NETLIFY BLOBS</span>
     </footer>
   </div>
 
@@ -906,6 +906,7 @@
     const DB_URL = "/.netlify/functions/checklist";
 
     let checklist = null;
+    let progressAvailable = false;
 
     async function loadChecklist() {
       try {
@@ -927,15 +928,26 @@
 
         validateChecklist(data.items);
         checklist = data;
+        progressAvailable = true;
         renderChecklist();
         setStatus("Synced");
       } catch (error) {
         console.error(error);
-        showError(
-          "Could not load the checklist.",
-          "Try refreshing. If it continues, contact the site owner."
-        );
-        setStatus("Connection failed");
+        try {
+          const fallback = await fetch("./checklist.json");
+          if (!fallback.ok) throw new Error("Catalog unavailable");
+          const data = await fallback.json();
+          validateChecklist(data.items);
+          checklist = { ...data, items: data.items.map(item => ({ ...item, done: false })) };
+          progressAvailable = false;
+          renderChecklist();
+          document.getElementById("progress").textContent = "Progress unavailable";
+          document.querySelectorAll(".phase-count").forEach(count => { count.textContent = "Progress unavailable"; });
+          setStatus("Movie list only. Saved progress could not load. Refresh to retry.");
+        } catch {
+          showError("Could not load the checklist.", "Try refreshing. If it continues, contact the site owner.");
+          setStatus("Connection failed");
+        }
       }
     }
 
@@ -946,7 +958,7 @@
       const item = checklist.items.find(item => item.id === id);
       const previous = item?.done;
 
-      if (!item) return;
+      if (!item || !progressAvailable) return;
 
       if (checkbox) {
         checkbox.disabled = true;
@@ -1093,6 +1105,7 @@
       checkbox.id = `watch-${item.id}`;
       checkbox.type = "checkbox";
       checkbox.checked = Boolean(item.done);
+      checkbox.disabled = !progressAvailable;
       checkbox.dataset.itemId = item.id;
       checkbox.setAttribute(
         "aria-label",
@@ -1105,7 +1118,7 @@
       });
 
       const labelText = document.createElement("span");
-      labelText.textContent = item.done ? "WATCHED" : "MARK WATCHED";
+      labelText.textContent = !progressAvailable ? "PROGRESS UNAVAILABLE" : item.done ? "WATCHED" : "MARK WATCHED";
 
       watchLabel.append(checkbox, labelText);
       content.append(title, meta, watchLabel);

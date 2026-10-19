@@ -1,76 +1,50 @@
 # OccasionalSites
 
-Small static sites hosted on Netlify. The MCU Archive is the only dynamic site; its checklist data stays in JSONStorage behind one Netlify Edge Function. It is intentionally public and collaboratively editable without accounts or login.
+Small static sites hosted on Netlify. MCU Archive has one public, shared checklist with persistent progress in Netlify Blobs. Anyone can change the shared checkmarks without an account.
 
-## Structure
+## Build and deploy
 
-```text
-index.html                  Collection landing page
-image-b.png                 Light-page wordmark icon
-image-w.png                 Dark-footer wordmark icon
-mcuarchive/              MCU site source
-  index.html
-  movie.png                 MCU favicon
-netlify/edge-functions/checklist.js
-scripts/build-sites.js
-dist/                       Generated Netlify publish output
+Use Node.js 22.12 or later:
+
+```powershell
+npm ci
+npm test
+npm run build
 ```
+
+Netlify builds with `node scripts/build-sites.js` and publishes `dist/`. Deploy the repository through Netlify so it installs dependencies and bundles the Function; uploading only `dist/` does not include the backend. Netlify supplies Blobs credentials automatically. No JSONStorage environment variables are required; old variables may be removed after verifying the deployed migration.
+
+To test the whole site locally, run `npx netlify dev` after installing dependencies. Local Blobs data is separate from production. Opening HTML directly or serving only static files cannot save progress.
+
+## MCU checklist storage
+
+- `mcuarchive/checklist.json`: authoritative catalog with stable IDs, original ordering, phases, titles, years, optional flags and posters. Add new movies here with unique IDs. New movies default to unchecked.
+- `netlify/data/initial-progress.json`: recovered JSONStorage snapshot: 61 entries, 24 watched. This is the initial baseline, not a live copy of progress. Keep it so untouched movies retain their migrated state.
+- `netlify/functions/checklist.mjs`: opens the site-wide `mcu-progress` store with strong consistency. Preview and local contexts use `mcu-progress-preview`, protecting production progress.
+- `netlify/lib/checklist.mjs`: validates requests, reads progress, and saves one boolean per `progress/<movie-id>` key. Missing keys use the recovered baseline. Saved `false` overrides a previously watched baseline. Reads never overwrite saved data; builds and deployments never reset it.
+
+Site-wide stores persist across deployments. Same-movie simultaneous saves use the last successful write; different movies have independent keys. Other open browsers see changes when refreshed, not in real time. Each checklist GET currently reads 61 keys; consider request volume and your Netlify usage allowance as traffic grows.
+
+`GET /.netlify/functions/checklist` returns the catalog with saved `done` values. `PUT` to the same endpoint accepts exactly:
+
+```json
+{ "id": "p2-05", "done": true }
+```
+
+Only existing IDs and boolean states are accepted. Visitors cannot edit catalog metadata. Success returns `{ "ok": true, "item": { "id": "p2-05", "done": true } }`. Validation errors use 400/404, unsupported methods 405, rate limits 429, and storage failures 502. The per-IP in-memory limit is 60 GETs or 30 PUTs per minute per function instance, not a distributed global limit.
+
+If progress cannot load, the page displays the static catalog with checkboxes disabled and progress marked unavailable. Failed saves restore the prior checkbox state. Refresh to retry loading progress.
+
+The migration recovered JSONStorage successfully before removing the runtime dependency. The original recovery backup is in ignored `.migration/checklist-backup.json`; it is not published. No import command or production token is needed: recovered baseline values apply until each movie has a saved Blobs value.
 
 ## Add a site
 
-1. Create a top-level folder, for example `reading-list/`.
-2. Add `reading-list/index.html` with a useful `<title>`.
-3. Run the build or deploy.
+Create a top-level folder with an `index.html` and rebuild. The build discovers site folders, copies static assets, and generates `dist/sites.json` for the landing page. It excludes environment files, backend sources, scripts, dependencies, and hidden directories.
 
-`scripts/build-sites.js` discovers top-level folders with an `index.html`, copies deployable static files into `dist/`, extracts declared favicons, then creates `dist/sites.json`. The root page uses that one catalog for cards, site count, and footer links. Each card loads its site's page in a lazy, visual-only iframe preview.
+Sites needing persistence can have their own Function and separate Blobs store. Static sites need no store.
 
-## Build and Deploy
+## Verification
 
-```powershell
-node scripts/build-sites.js
-```
+`npm test` uses the Netlify Blobs SDK and its local server to verify recovered progress, concurrent different-movie changes, persistence across a server restart, validation, rate limits, and storage failures. These checks do not deploy or access production.
 
-Netlify runs the same command and publishes only `dist/`. It does not publish `.env*`, `netlify/`, `scripts/`, `node_modules/`, source documentation, or `dist/` recursively.
-
-Set these Netlify environment variables with the `Functions` scope:
-
-```text
-JSONSTORAGE_URL=https://api.jsonstorage.net/v1/json/YOUR_USER_ID/YOUR_ITEM_ID
-JSONSTORAGE_API_KEY=YOUR_SECRET_API_KEY
-```
-
-Never commit real environment files or storage credentials. Visitors never receive either JSONStorage credential.
-
-## Checklist API
-
-`GET /.netlify/functions/checklist` is public and returns the stored checklist.
-
-`PUT /.netlify/functions/checklist` is public. Anyone can toggle an existing checklist entry anonymously:
-
-```json
-{
-  "id": "p2-05",
-  "done": true
-}
-```
-
-Success response:
-
-```json
-{
-  "ok": true,
-  "item": { "id": "p2-05", "done": true }
-}
-```
-
-Only exactly `id` and `done` are accepted. The server requires a non-empty existing string ID and a real boolean `done`. It mutates only `item.done`; `id`, `phase`, `title`, `year`, `optional`, and `poster` remain authoritative storage metadata. IDs are stable opaque strings, gaps are valid, `year` remains display text, optional items remain optional, and source array order is preserved.
-
-Failures return `{ "ok": false, "error": "..." }`: `INVALID_REQUEST` (400), `ITEM_NOT_FOUND` (404), `METHOD_NOT_ALLOWED` (405), `RATE_LIMITED` (429), or a storage error (500).
-
-The function applies a small in-memory per-IP rate limit: 60 GETs or 30 PUTs per minute per warm function instance. This protects normal bursts but is not a global distributed limit. Public editing is intentional; validation only permits the `done` boolean of an existing ID, so visitors cannot modify checklist metadata through this endpoint.
-
-## Concurrency
-
-Each write reads the latest checklist, changes only one existing item's `done`, then writes it back. This removes stale full-checklist browser updates, so normal different-item updates do not send unrelated state.
-
-JsonStorage's documented API exposes GET, PUT, and PATCH but no documented revision, ETag, conditional write, or compare-and-swap mechanism. Two function executions can still read the same revision then perform competing whole-document writes. Same-item writes are last successful write wins; different-item writes retain a residual race. Solve that completely only by using storage with conditional writes or atomic item updates.
+After deploying, check/uncheck a movie, refresh, reopen in another browser, and verify the same state. Verify preview changes leave production untouched. Live deployment and browser checks are separate from local tests.
