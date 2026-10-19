@@ -133,7 +133,7 @@
         <a href="#sites">Sites</a>
         <a href="#about">About</a>
       </div>
-      <a class="nav-action" href="#sites">Browse sites</a>
+      <a class="nav-action" id="random-site" href="#sites" aria-label="Open a random site">Browse sites</a>
     </nav>
   </header>
 
@@ -172,10 +172,19 @@
     const siteCount = document.getElementById("site-count");
     const footerSites = document.getElementById("footer-sites");
     const footerCount = document.getElementById("footer-count");
+    let availableSites = [];
+
+    document.getElementById("random-site").addEventListener("click", event => {
+      if (!availableSites.length) return;
+      event.preventDefault();
+      const site = availableSites[Math.floor(Math.random() * availableSites.length)];
+      window.location.assign(site.path);
+    });
 
     fetch("/sites.json")
       .then(response => response.ok ? response.json() : Promise.reject(response))
       .then(sites => {
+        availableSites = sites;
         grid.replaceChildren(...sites.map(site => createSite(site)));
         const count = `${sites.length} site${sites.length === 1 ? "" : "s"} live`;
         siteCount.textContent = count;
