@@ -17,3 +17,20 @@ main{grid-template-columns:330px minmax(0,1fr);gap:26px;padding:24px}
 @media(max-width:700px){main{display:flex;padding:14px;gap:24px}.workspace{order:0;position:static;width:100%}aside{order:1;width:100%}.intro{display:none}#tools{max-height:none;display:flex}.toolbar button{flex:1 0 24%;padding:7px 3px;font-size:11px}textarea{min-height:220px;height:30vh;padding:14px}.editor-heading{padding:10px;font-size:13px}.editor-actions{gap:7px}.editor-actions button{font-size:12px}.editor-actions>span{min-width:0;font-size:11px}#categories{position:sticky;top:0;background:var(--paper);z-index:2;padding:8px 0;margin:8px 0}#categories button{font-size:12px}#tool-dialog{padding:20px}.panel{padding:7px 0}.brand{font-size:25px}.counts{font-size:10px}footer{display:none}.tool-section-heading{padding-top:12px}}
 .mobile-switch{display:none}
 @media(max-width:700px){.mobile-switch{display:flex;position:sticky;top:0;z-index:4;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 14px;gap:8px}.mobile-switch button{flex:1;min-height:44px}.mobile-switch button[aria-pressed=true]{background:var(--ink);color:var(--paper)}body:not(.browse-tools) main>aside{display:none}.browse-tools main>.workspace{display:none}.browse-tools main>aside{display:block}#categories{position:static}.expanded .mobile-switch{display:none}}
+/* Readable text at every screen size. */
+body{font-size:16px;line-height:1.6}
+button,input,select{font-size:16px;min-height:44px}
+label,.settings label,#tool-dialog .settings label{font-size:16px}
+.intro>p:last-of-type{font-size:16px}
+.search label{font-size:16px}.search span{font-size:14px}
+#categories button{font-size:15px;line-height:1.4;padding:10px 6px}
+.tool-main{font-size:16px;padding-top:15px;padding-bottom:15px}.tool-main strong{font-size:17px}.tool-main span{font-size:15px;line-height:1.5}
+.tool-section-heading h2{font-size:18px}.tool-section-heading button{font-size:14px}
+.toolbar button,.editor-actions button{font-size:15px;padding:10px}
+textarea{font-size:18px;line-height:1.75}
+.editor-heading{font-size:17px}.tag{font-size:12px}
+.counts{font-size:14px;line-height:1.5;gap:12px}
+.editor-actions>span{font-size:14px}#status{font:14px/1.6 Arial,sans-serif}
+.panel summary,.recipes summary{font-size:16px}.recipes p,#tool-dialog p{font-size:16px}.recipes>button{font-size:15px}
+pre{font-size:15px}h3{font-size:14px}footer{font-size:12px}#matches{font-size:14px}
+@media(max-width:700px){header button{font-size:14px}.toolbar button{font-size:14px;flex-basis:30%}.editor-actions button{font-size:14px}.editor-actions>span{font-size:14px}#categories button{font-size:15px}.counts{font-size:13px}.editor-heading{font-size:16px}.tag{font-size:11px}.find-grid input{font-size:16px}}
