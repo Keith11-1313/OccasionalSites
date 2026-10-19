@@ -1,0 +1,12 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const {tools}=require('../textfix/transforms.js');
+const opts={indent:'2',separator:', ',prefix:'> ',suffix:';',width:12,filter:'apple',sensitive:false};
+const run=(id,s,o={})=>tools.find(t=>t.id===id).run(s,{...opts,...o});
+test('pasted paragraphs preserve paragraph boundaries',()=>{assert.equal(run('paragraphs','hello\r\nworld\r\n\r\nnext\nparagraph'),'hello world\n\nnext paragraph');assert.equal(run('one-line',' a\n\n b '),'a b');});
+test('indentation preserves relative structure and respects tab stops',()=>{assert.equal(run('dedent','    a\n      b\n\n    c'),'a\n  b\n\nc');assert.equal(run('tabs-spaces','a\tb'),'a b');assert.equal(run('normalize',' \tx\n\t y'),'  x\n   y');assert.equal(run('spaces-tabs','     x'),'\t\t x');});
+test('duplicate lines and natural sorting',()=>{assert.equal(run('dedupe','Apple\napple\npear'),'Apple\npear');assert.equal(run('dedupe','Apple\napple',{sensitive:true}),'Apple\napple');assert.equal(run('natural','item10\nitem2'),'item2\nitem10');});
+test('Unicode encoding survives round trips',()=>{const s='café 👋 中文';assert.equal(run('base64-decode',run('base64-encode',s)),s);assert.equal(run('url-decode',run('url-encode',s)),s);assert.equal(run('digits','a１２3'),'１２3');assert.equal(run('accents','café'),'cafe');});
+test('JSON and literal separators validate input',()=>{assert.deepEqual(JSON.parse(run('delimited-array','a, b')),[ 'a','b']);assert.equal(run('array-lines','["a",2,null]'),'a\n2\n');assert.throws(()=>run('json','broken'));assert.throws(()=>run('split','abc',{separator:''}));});
+test('HTML is encoded and never evaluated',()=>{const s='<script>alert("x")</script>';assert.equal(run('html-unescape',run('html-escape',s)),s);assert.equal(run('html-unescape','&#x1f44b;'),'👋');});
+test('every tool accepts representative text or reports a validation error',()=>{for(const tool of tools){try{assert.equal(typeof tool.run('  Hello world\nitem2\nitem10\n\nHello world  ',opts),'string',tool.id);}catch(e){assert.ok(['json','json-min','array-lines','url-decode','base64-decode'].includes(tool.id),`${tool.id}: ${e.message}`);}}assert.ok(tools.length>70);});

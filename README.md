@@ -45,6 +45,16 @@ The migration recovered JSONStorage successfully before removing the runtime dep
 
 ## Add a site
 
+## TextFix
+
+`/textfix/` is a browser-only text workshop with 82 transformations across case, cleanup, lines, indentation, characters, extraction and formatting. It includes selection-aware transformations, undo/redo, find/replace (including regular expressions), favorites, saved recipes, text insights, before/after comparison, text-file import/export, dark mode and an expanded editor. No backend or external requests are used. Draft saving is opt-in and stored only in this browser; disabling it removes the saved draft. Favorites and recipes are also device-local. Imported files are limited to 5 MB.
+
+Use Tool options for separators, line filters, prefixes/suffixes, indentation and wrapping. Search spans all categories. Recipe mode queues tools in order, applies them as one undoable change, and can save one recipe with its options. Case conversions and smart quotes are mechanical; review proper nouns and punctuation. Indentation normalizes whitespace rather than parsing code. Extraction uses patterns and is not a full email or URL validator. JSON formatting uses JavaScript JSON parsing, so numbers beyond JavaScript's safe integer precision need special care.
+
+Implementation: `textfix/index.html`, `style.css`, `transforms.js` (pure transformations) and `app.js` (editor interaction). `npm test` includes transformation checks in `scripts/textfix.test.cjs`.
+
+### Adding another site
+
 Create a top-level folder with an `index.html` and rebuild. The build discovers site folders, copies static assets, and generates `dist/sites.json` for the landing page. It excludes environment files, backend sources, scripts, dependencies, and hidden directories.
 
 Sites needing persistence can have their own Function and separate Blobs store. Static sites need no store.
