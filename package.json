@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "node scripts/build-sites.js",
-    "test": "node --test scripts/checklist.test.mjs"
+    "test": "node --test scripts/checklist.test.mjs scripts/audience.test.mjs"
   },
   "dependencies": {
     "@netlify/blobs": "^11.0.3"

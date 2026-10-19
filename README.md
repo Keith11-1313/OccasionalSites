@@ -23,7 +23,7 @@ To test the whole site locally, run `npx netlify dev` after installing dependenc
 - `netlify/functions/checklist.mjs`: opens the site-wide `mcu-progress` store with strong consistency. Preview and local contexts use `mcu-progress-preview`, protecting production progress.
 - `netlify/lib/checklist.mjs`: validates requests, reads progress, and saves one boolean per `progress/<movie-id>` key. Missing keys use the recovered baseline. Saved `false` overrides a previously watched baseline. Reads never overwrite saved data; builds and deployments never reset it.
 
-Site-wide stores persist across deployments. Same-movie simultaneous saves use the last successful write; different movies have independent keys. Other open browsers see changes when refreshed, not in real time. Each checklist GET currently reads 61 keys; consider request volume and your Netlify usage allowance as traffic grows.
+Site-wide stores persist across deployments. Same-entry simultaneous saves use the last successful write; different movies and episodes have independent keys. Other open browsers see changes when refreshed, not in real time. Each checklist GET reads one key per title and episode; consider request volume and your Netlify usage allowance as traffic grows.
 
 `GET /.netlify/functions/checklist` returns the catalog with saved `done` values. `PUT` to the same endpoint accepts exactly:
 
@@ -31,7 +31,13 @@ Site-wide stores persist across deployments. Same-movie simultaneous saves use t
 { "id": "p2-05", "done": true }
 ```
 
-Only existing IDs and boolean states are accepted. Visitors cannot edit catalog metadata. Success returns `{ "ok": true, "item": { "id": "p2-05", "done": true } }`. Validation errors use 400/404, unsupported methods 405, rate limits 429, and storage failures 502. The per-IP in-memory limit is 60 GETs or 30 PUTs per minute per function instance, not a distributed global limit.
+Only existing IDs and boolean states are accepted. For a series, send the episode ID (for example `p4-02-e01`). Season-level writes are rejected; season completion is derived from all episodes. A legacy season-level `true` is inherited by episodes until individually overridden. Unreleased entries are rejected by the server as well as disabled in the page. Episode release dates use the Asia/Manila calendar date. Visitors cannot edit catalog metadata. Success returns `{ "ok": true, "item": { "id": "p2-05", "done": true } }`. Validation errors use 400/404, unsupported methods 405, rate limits 429, and storage failures 502. The per-IP in-memory limit is 60 GETs or 30 PUTs per minute per function instance, not a distributed global limit.
+
+## Catalog and community scores
+
+The catalog update of 19 October 2026 adds eight previously missing entries, for 69 titles and 26 series/seasons. Movies, specials, and seasons retain stable IDs. Each series has expandable episode checkboxes and a watched count. Future VisionQuest episodes show their release dates. Upcoming films remain listed but cannot be marked watched.
+
+The display-only audience strip shows Rotten Tomatoes All Audience totals: a red negative count for `notLiked` and a green positive count for `liked`. All 67 released titles/seasons have verified snapshots; the two upcoming films show N/A. Source URLs remain in the catalog; cards show only the red negative count on the left and the green positive count on the right. The tooltip records the snapshot date. These are audience rating totals, not Reddit votes or critic scores. They are stored in the catalog, so visitor page loads do not contact Rotten Tomatoes. Refresh manually with `node scripts/refresh-audience-ratings.mjs`, review `.migration/audience-research.json`, then run `node scripts/refresh-audience-ratings.mjs --apply` and rebuild. The importer refuses to apply incomplete/unverified data. `--missing` retries only failed entries. The catalog note above the checklist has been removed.
 
 If progress cannot load, the page displays the static catalog with checkboxes disabled and progress marked unavailable. Failed saves restore the prior checkbox state. Refresh to retry loading progress.
 
@@ -45,6 +51,8 @@ Sites needing persistence can have their own Function and separate Blobs store. 
 
 ## Verification
 
-`npm test` uses the Netlify Blobs SDK and its local server to verify recovered progress, concurrent different-movie changes, persistence across a server restart, validation, rate limits, and storage failures. These checks do not deploy or access production.
+`npm test` uses the Netlify Blobs SDK and its local server to verify recovered progress, concurrent movie and episode changes, persistence across a server restart, legacy season migration, validation, future-release rejection, rate limits, and storage failures. These checks do not deploy or access production. `node scripts/preview-mcu.mjs` serves the built site at port 8890 with a separate local Blobs store for browser checks.
 
 After deploying, check/uncheck a movie, refresh, reopen in another browser, and verify the same state. Verify preview changes leave production untouched. Live deployment and browser checks are separate from local tests.
+
+Release labels show the full movie release date or season premiere date. Dates use the source listed in each catalog entry; older title dates were checked against Rotten Tomatoes on 19 October 2026. Series use the Season Info release date, not the review module date (which can reflect a finale or later season). Existing full-date labels are retained.

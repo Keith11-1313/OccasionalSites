@@ -500,13 +500,11 @@
     }
 
     .optional {
-      display: inline-flex;
-      align-items: center;
-      min-height: 24px;
-      padding: 2px 7px;
-      color: #755f18;
-      background: #f3e6b2;
-      border: 1px solid #9d8537;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+      flex: 0 0 auto;
     }
 
     .watch-row {
@@ -831,6 +829,17 @@
         transition: none;
       }
     }
+    .community { display: flex; flex-wrap: wrap; align-items: center; gap: 5px 10px; margin: 8px 0 12px; }
+    .community-score { display: flex; justify-content: space-between; width: 100%; gap: 14px; padding: 5px 9px; font: 800 14px/1.3 "Courier New", monospace; white-space: nowrap; }
+    .community-negative { color: #a12626; }
+    .community-positive { color: #176138; }
+    .episodes { border-top: 1px dashed var(--line); }
+    .episodes summary { cursor: pointer; padding: 13px 0; font: 800 13px/1.5 "Courier New", monospace; }
+    .episode-row { display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 6px 0; font-size: 13px; border-top: 1px solid var(--line-soft); cursor: pointer; }
+    .episode-row input { width: 22px; height: 22px; flex: 0 0 auto; accent-color: var(--blue); }
+    input:disabled { cursor: not-allowed; }
+    summary:focus-visible, input:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+    @media (min-width: 621px) { .grid { align-items: start; } }
   </style>
 </head>
 
@@ -895,6 +904,7 @@
     <footer id="about">
       <span>MCU ARCHIVE / SHARED CHECKLIST</span>
       <span>SAVED WITH NETLIFY BLOBS</span>
+      <span>Episode data: <a href="https://www.tvmaze.com/" target="_blank" rel="noopener noreferrer">TVmaze</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA</a></span>
     </footer>
   </div>
 
@@ -951,14 +961,23 @@
       }
     }
 
+    function findEntry(id) {
+      return checklist.items.find(item => item.id === id) || checklist.items.flatMap(item => item.episodes || []).find(episode => episode.id === id);
+    }
+
+    function isUnreleased(entry) {
+      const today = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Manila" }).format(new Date());
+      return entry.upcoming || (entry.releaseDate && entry.releaseDate > today);
+    }
+
     async function toggleItem(id, done) {
       const checkbox = document.querySelector(
         `input[data-item-id="${cssEscape(id)}"]`
       );
-      const item = checklist.items.find(item => item.id === id);
+      const item = findEntry(id);
       const previous = item?.done;
 
-      if (!item || !progressAvailable) return;
+      if (!item || !progressAvailable || isUnreleased(item)) return;
 
       if (checkbox) {
         checkbox.disabled = true;
@@ -1050,6 +1069,7 @@
 
     function createCard(item) {
       const card = document.createElement("article");
+      card.dataset.titleId = item.id;
       card.className = "card" + (item.done ? " done" : "");
 
       const tape = document.createElement("span");
@@ -1092,9 +1112,13 @@
       meta.appendChild(year);
 
       if (item.optional) {
-        const optional = document.createElement("span");
+        const optional = document.createElement("img");
         optional.className = "optional";
-        optional.textContent = "OPTIONAL";
+        optional.src = "optional.png";
+        optional.alt = "Optional";
+        optional.title = "Optional";
+        optional.width = 24;
+        optional.height = 24;
         meta.appendChild(optional);
       }
 
@@ -1105,7 +1129,7 @@
       checkbox.id = `watch-${item.id}`;
       checkbox.type = "checkbox";
       checkbox.checked = Boolean(item.done);
-      checkbox.disabled = !progressAvailable;
+      checkbox.disabled = !progressAvailable || isUnreleased(item);
       checkbox.dataset.itemId = item.id;
       checkbox.setAttribute(
         "aria-label",
@@ -1121,7 +1145,33 @@
       labelText.textContent = !progressAvailable ? "PROGRESS UNAVAILABLE" : item.done ? "WATCHED" : "MARK WATCHED";
 
       watchLabel.append(checkbox, labelText);
-      content.append(title, meta, watchLabel);
+      content.append(title, meta, createCommunityScore(item));
+      if (item.episodes) {
+        const details = document.createElement("details");
+        details.className = "episodes";
+        const summary = document.createElement("summary");
+        summary.textContent = episodeSummary(item);
+        details.appendChild(summary);
+        for (const episode of item.episodes) {
+          const row = document.createElement("label");
+          row.className = "episode-row";
+          const input = document.createElement("input");
+          input.type = "checkbox";
+          input.checked = Boolean(episode.done);
+          input.disabled = !progressAvailable || isUnreleased(episode);
+          input.dataset.itemId = episode.id;
+          input.setAttribute("aria-label", item.title + ": " + episode.title);
+          input.addEventListener("change", event => toggleItem(episode.id, event.target.checked));
+          const text = document.createElement("span");
+          text.textContent = String(episode.number).padStart(2, "0") + " · " + episode.title + (isUnreleased(episode) ? " · " + episode.releaseDate : "");
+          row.append(input, text);
+          details.appendChild(row);
+        }
+        content.appendChild(details);
+      } else {
+        if (item.upcoming) labelText.textContent = "UPCOMING";
+        content.appendChild(watchLabel);
+      }
 
       card.append(tape, posterWrap, content);
       return card;
@@ -1134,17 +1184,50 @@
       return placeholder;
     }
 
+    function episodeSummary(item) {
+      return progressAvailable ? item.episodes.filter(episode => episode.done).length + " / " + item.episodes.length + " episodes watched" : "Episodes · progress unavailable";
+    }
+
+    function createCommunityScore(item) {
+      const wrapper = document.createElement("div");
+      wrapper.className = "community";
+      const score = document.createElement("span");
+      score.className = "community-score";
+      for (const [field, sign, color, description] of [["notLiked", "−", "negative", "audience ratings not liked"], ["liked", "+", "positive", "audience ratings liked"]]) {
+        const count = item.audience?.[field];
+        const verified = Number.isSafeInteger(count) && count >= 0;
+        const total = document.createElement("span");
+        total.className = "community-" + color;
+        total.textContent = sign + (verified ? count.toLocaleString() : " N/A");
+        total.setAttribute("aria-label", verified ? count + " " + description : description + " unavailable");
+        score.appendChild(total);
+      }
+      if (item.audience?.checkedAt) wrapper.title = "All Audience ratings · snapshot " + item.audience.checkedAt.slice(0, 10);
+      wrapper.appendChild(score);
+      return wrapper;
+    }
+
     function syncItem(id) {
-      const item = checklist.items.find(item => item.id === id);
+      const entry = findEntry(id);
       const checkbox = document.querySelector(`input[data-item-id="${cssEscape(id)}"]`);
-      if (!item || !checkbox) return;
-      checkbox.checked = item.done;
-      checkbox.setAttribute("aria-label", `${item.done ? "Mark as not watched" : "Mark as watched"}: ${item.title}`);
-      checkbox.closest(".card").classList.toggle("done", item.done);
-      checkbox.parentElement.querySelector("span").textContent = item.done ? "WATCHED" : "MARK WATCHED";
+      if (checkbox && entry) checkbox.checked = entry.done;
+      const parent = checklist.items.find(item => item.id === id || item.episodes?.some(episode => episode.id === id));
+      if (!parent) return;
+      if (parent.episodes) parent.done = parent.episodes.every(episode => episode.done);
+      const card = document.querySelector(`[data-title-id="${cssEscape(parent.id)}"]`);
+      card.classList.toggle("done", parent.done);
+      if (parent.episodes) card.querySelector("summary").textContent = episodeSummary(parent);
+      else {
+        checkbox.setAttribute("aria-label", (parent.done ? "Mark as not watched: " : "Mark as watched: ") + parent.title);
+        checkbox.parentElement.querySelector("span").textContent = parent.done ? "WATCHED" : "MARK WATCHED";
+      }
     }
 
     function updateOverallProgress() {
+      document.querySelectorAll(".phase").forEach(section => {
+        const items = checklist.items.filter(item => "phase-" + item.phase === section.id);
+        section.querySelector(".phase-count").textContent = items.filter(item => item.done).length + " / " + items.length + " watched";
+      });
       const total = checklist.items.length;
       const done = checklist.items.filter(item => item.done).length;
       const percent = total ? (done / total) * 100 : 0;

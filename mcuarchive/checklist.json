@@ -5,465 +5,2392 @@
       "id": "p1-01",
       "phase": 1,
       "title": "Iron Man",
-      "year": "2008",
+      "year": "May 2, 2008",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/ironman_lob_crd_01_3.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/ironman_lob_crd_01_3.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 225930,
+        "notLiked": 22652,
+        "percent": 91,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/iron_man",
+        "checkedAt": "2026-10-19T02:36:53.608Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/iron_man"
     },
     {
       "id": "p1-02",
       "phase": 1,
       "title": "The Incredible Hulk",
-      "year": "2008",
+      "year": "June 13, 2008",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/theincrediblehulk_lob_crd_03.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/theincrediblehulk_lob_crd_03.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 57919,
+        "notLiked": 26014,
+        "percent": 69,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/the_incredible_hulk",
+        "checkedAt": "2026-10-19T02:36:54.010Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/the_incredible_hulk"
     },
     {
       "id": "p1-04",
       "phase": 1,
       "title": "Iron Man 2",
-      "year": "2010",
+      "year": "May 7, 2010",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/ironman2_lob_crd_01_3.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/ironman2_lob_crd_01_3.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 92798,
+        "notLiked": 37639,
+        "percent": 71,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/iron_man_2",
+        "checkedAt": "2026-10-19T02:36:54.451Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/iron_man_2"
     },
     {
       "id": "p1-05",
       "phase": 1,
       "title": "Thor",
-      "year": "2011",
+      "year": "May 6, 2011",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/thor_lob_crd_01.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/thor_lob_crd_01.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 114157,
+        "notLiked": 36774,
+        "percent": 76,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/thor",
+        "checkedAt": "2026-10-19T02:36:54.437Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/thor"
     },
     {
       "id": "p1-07",
       "phase": 1,
       "title": "Captain America: The First Avenger",
-      "year": "2011",
+      "year": "July 22, 2011",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/captainamerica_lob_crd_01.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/captainamerica_lob_crd_01.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 77898,
+        "notLiked": 25342,
+        "percent": 75,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/captain_america_the_first_avenger",
+        "checkedAt": "2026-10-19T02:36:54.369Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/captain_america_the_first_avenger"
     },
     {
       "id": "p1-08",
       "phase": 1,
       "title": "The Avengers",
-      "year": "2012",
+      "year": "May 4, 2012",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/theavengers_lob_crd_03.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/theavengers_lob_crd_03.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 287530,
+        "notLiked": 27979,
+        "percent": 91,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/marvels_the_avengers",
+        "checkedAt": "2026-10-19T02:36:54.960Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/marvels_the_avengers"
     },
     {
       "id": "p2-01",
       "phase": 2,
       "title": "Iron Man 3",
-      "year": "2013",
+      "year": "May 3, 2013",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/ironman3_lob_crd_01_10.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/ironman3_lob_crd_01_10.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 121732,
+        "notLiked": 35137,
+        "percent": 78,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/iron_man_3",
+        "checkedAt": "2026-10-19T02:36:54.789Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/iron_man_3"
     },
     {
       "id": "p2-03",
       "phase": 2,
       "title": "Thor: The Dark World",
-      "year": "2013",
+      "year": "November 8, 2013",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/thorthedarkworld_lob_crd_02_1.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/thorthedarkworld_lob_crd_02_1.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 76937,
+        "notLiked": 26514,
+        "percent": 74,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/thor_the_dark_world",
+        "checkedAt": "2026-10-19T02:36:54.811Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/thor_the_dark_world"
     },
     {
       "id": "p2-05",
       "phase": 2,
       "title": "Captain America: The Winter Soldier",
-      "year": "2014",
+      "year": "April 4, 2014",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/captainamericathewintersoldier_lob_crd_01_1.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/captainamericathewintersoldier_lob_crd_01_1.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 111297,
+        "notLiked": 9889,
+        "percent": 92,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/captain_america_the_winter_soldier_2014",
+        "checkedAt": "2026-10-19T02:36:55.887Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/captain_america_the_winter_soldier_2014"
     },
     {
       "id": "p2-06",
       "phase": 2,
       "title": "Guardians of the Galaxy",
-      "year": "2014",
+      "year": "August 1, 2014",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/guardiansofthegalaxy_lob_crd_03.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/guardiansofthegalaxy_lob_crd_03.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 129554,
+        "notLiked": 10725,
+        "percent": 92,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/guardians_of_the_galaxy",
+        "checkedAt": "2026-10-19T02:36:55.370Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/guardians_of_the_galaxy"
     },
     {
       "id": "p2-07",
       "phase": 2,
       "title": "Avengers: Age of Ultron",
-      "year": "2015",
+      "year": "May 1, 2015",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/avengersageofultron_lob_crd_03.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/avengersageofultron_lob_crd_03.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 83862,
+        "notLiked": 17885,
+        "percent": 82,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/avengers_age_of_ultron",
+        "checkedAt": "2026-10-19T02:36:55.328Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/avengers_age_of_ultron"
     },
     {
       "id": "p2-08",
       "phase": 2,
       "title": "Ant-Man",
-      "year": "2015",
+      "year": "July 17, 2015",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/ant-man_lob_crd_01_8.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/ant-man_lob_crd_01_8.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 61124,
+        "notLiked": 10504,
+        "percent": 85,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/antman",
+        "checkedAt": "2026-10-19T02:36:55.629Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/antman"
     },
     {
       "id": "p3-01",
       "phase": 3,
       "title": "Captain America: Civil War",
-      "year": "2016",
+      "year": "May 6, 2016",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/captainamericacivilwar_lob_crd_01_9.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/captainamericacivilwar_lob_crd_01_9.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 81922,
+        "notLiked": 9827,
+        "percent": 89,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/captain_america_civil_war",
+        "checkedAt": "2026-10-19T02:36:55.756Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/captain_america_civil_war"
     },
     {
       "id": "p3-02",
       "phase": 3,
       "title": "Doctor Strange",
-      "year": "2016",
+      "year": "November 4, 2016",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/doctorstrange_lob_crd_01_6.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/doctorstrange_lob_crd_01_6.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 49516,
+        "notLiked": 8292,
+        "percent": 86,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/doctor_strange_2016",
+        "checkedAt": "2026-10-19T02:36:56.761Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/doctor_strange_2016"
     },
     {
       "id": "p3-03",
       "phase": 3,
       "title": "Guardians of the Galaxy Vol. 2",
-      "year": "2017",
+      "year": "May 5, 2017",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/guardiansofthegalaxyvol.2_lob_crd_01.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/guardiansofthegalaxyvol.2_lob_crd_01.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 50758,
+        "notLiked": 7592,
+        "percent": 87,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/guardians_of_the_galaxy_vol_2",
+        "checkedAt": "2026-10-19T02:36:56.528Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/guardians_of_the_galaxy_vol_2"
     },
     {
       "id": "p3-04",
       "phase": 3,
       "title": "Spider-Man: Homecoming",
-      "year": "2017",
+      "year": "July 7, 2017",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/spider-manhomecoming_lob_crd_02.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/spider-manhomecoming_lob_crd_02.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 46315,
+        "notLiked": 6990,
+        "percent": 87,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/spider_man_homecoming",
+        "checkedAt": "2026-10-19T02:36:56.399Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/spider_man_homecoming"
     },
     {
       "id": "p3-05",
       "phase": 3,
       "title": "Thor: Ragnarok",
-      "year": "2017",
+      "year": "November 3, 2017",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/thorragnarok_lob_crd_03.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/thorragnarok_lob_crd_03.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 40251,
+        "notLiked": 5841,
+        "percent": 87,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/thor_ragnarok_2017",
+        "checkedAt": "2026-10-19T02:36:56.661Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/thor_ragnarok_2017"
     },
     {
       "id": "p3-06",
       "phase": 3,
       "title": "Black Panther",
-      "year": "2018",
+      "year": "February 16, 2018",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/blackpanther_lob_crd_01_4.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/blackpanther_lob_crd_01_4.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 16250,
+        "notLiked": 4300,
+        "percent": 79,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/black_panther_2018",
+        "checkedAt": "2026-10-19T02:36:57.744Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/black_panther_2018"
     },
     {
       "id": "p3-07",
       "phase": 3,
       "title": "Avengers: Infinity War",
-      "year": "2018",
+      "year": "April 27, 2018",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/avengersinfinitywar_lob_crd_02_1.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/avengersinfinitywar_lob_crd_02_1.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 44422,
+        "notLiked": 3833,
+        "percent": 92,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/avengers_infinity_war",
+        "checkedAt": "2026-10-19T02:36:57.064Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/avengers_infinity_war"
     },
     {
       "id": "p3-08",
       "phase": 3,
       "title": "Ant-Man and the Wasp",
-      "year": "2018",
+      "year": "July 6, 2018",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/ant-manthewasp_lob_crd_01.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/ant-manthewasp_lob_crd_01.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 14645,
+        "notLiked": 4035,
+        "percent": 78,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/ant_man_and_the_wasp",
+        "checkedAt": "2026-10-19T02:36:57.026Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/ant_man_and_the_wasp"
     },
     {
       "id": "p3-09",
       "phase": 3,
       "title": "Captain Marvel",
-      "year": "2019",
+      "year": "March 8, 2019",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/captainmarvel_lob_crd_06.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/captainmarvel_lob_crd_06.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 27725,
+        "notLiked": 36146,
+        "percent": 45,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/captain_marvel",
+        "checkedAt": "2026-10-19T02:36:57.405Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/captain_marvel"
     },
     {
       "id": "p3-10",
       "phase": 3,
       "title": "Avengers: Endgame",
-      "year": "2019",
+      "year": "April 26, 2019",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/avengersendgame_lob_crd_05_2.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/avengersendgame_lob_crd_05_2.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 69111,
+        "notLiked": 7292,
+        "percent": 90,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/avengers_endgame",
+        "checkedAt": "2026-10-19T02:36:57.361Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/avengers_endgame"
     },
     {
       "id": "p3-11",
       "phase": 3,
       "title": "Spider-Man: Far From Home",
-      "year": "2019",
+      "year": "July 2, 2019",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/spider-manfarfromhome_lob_crd_04_3.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/spider-manfarfromhome_lob_crd_04_3.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 93740,
+        "notLiked": 7959,
+        "percent": 92,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/spider_man_far_from_home",
+        "checkedAt": "2026-10-19T02:36:57.891Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/spider_man_far_from_home"
     },
     {
       "id": "p4-01",
       "phase": 4,
       "title": "WandaVision, season 1",
-      "year": "2021",
+      "year": "January 15, 2021",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/wandavision_lob_crd_06.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/wandavision_lob_crd_06.jpg",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p4-01-e01",
+          "number": 1,
+          "title": "Filmed Before a Live Studio Audience",
+          "source": "https://www.tvmaze.com/episodes/1969172/wandavision-1x01-filmed-before-a-live-studio-audience"
+        },
+        {
+          "id": "p4-01-e02",
+          "number": 2,
+          "title": "Don't Touch That Dial",
+          "source": "https://www.tvmaze.com/episodes/2001015/wandavision-1x02-dont-touch-that-dial"
+        },
+        {
+          "id": "p4-01-e03",
+          "number": 3,
+          "title": "Now in Color",
+          "source": "https://www.tvmaze.com/episodes/2004701/wandavision-1x03-now-in-color"
+        },
+        {
+          "id": "p4-01-e04",
+          "number": 4,
+          "title": "We Interrupt This Program",
+          "source": "https://www.tvmaze.com/episodes/2008161/wandavision-1x04-we-interrupt-this-program"
+        },
+        {
+          "id": "p4-01-e05",
+          "number": 5,
+          "title": "On a Very Special Episode…",
+          "source": "https://www.tvmaze.com/episodes/2008163/wandavision-1x05-on-a-very-special-episode"
+        },
+        {
+          "id": "p4-01-e06",
+          "number": 6,
+          "title": "All-New Halloween Spooktacular!",
+          "source": "https://www.tvmaze.com/episodes/2008164/wandavision-1x06-all-new-halloween-spooktacular"
+        },
+        {
+          "id": "p4-01-e07",
+          "number": 7,
+          "title": "Breaking the Fourth Wall",
+          "source": "https://www.tvmaze.com/episodes/2008165/wandavision-1x07-breaking-the-fourth-wall"
+        },
+        {
+          "id": "p4-01-e08",
+          "number": 8,
+          "title": "Previously On",
+          "source": "https://www.tvmaze.com/episodes/2008166/wandavision-1x08-previously-on"
+        },
+        {
+          "id": "p4-01-e09",
+          "number": 9,
+          "title": "The Series Finale",
+          "source": "https://www.tvmaze.com/episodes/2008167/wandavision-1x09-the-series-finale"
+        }
+      ],
+      "episodeSource": "https://www.tvmaze.com/shows/41748/wandavision",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 11038,
+        "notLiked": 1564,
+        "percent": 88,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/wandavision/s01",
+        "checkedAt": "2026-10-19T02:36:59.273Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/wandavision/s01"
     },
     {
       "id": "p4-02",
       "phase": 4,
       "title": "The Falcon and the Winter Soldier",
-      "year": "2021",
+      "year": "March 19, 2021",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/falcws_lob_crd_03.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/falcws_lob_crd_03.jpg",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p4-02-e01",
+          "number": 1,
+          "title": "New World Order",
+          "source": "https://www.tvmaze.com/episodes/1984013/the-falcon-and-the-winter-soldier-1x01-new-world-order"
+        },
+        {
+          "id": "p4-02-e02",
+          "number": 2,
+          "title": "The Star Spangled Man",
+          "source": "https://www.tvmaze.com/episodes/2053381/the-falcon-and-the-winter-soldier-1x02-the-star-spangled-man"
+        },
+        {
+          "id": "p4-02-e03",
+          "number": 3,
+          "title": "Power Broker",
+          "source": "https://www.tvmaze.com/episodes/2053593/the-falcon-and-the-winter-soldier-1x03-power-broker"
+        },
+        {
+          "id": "p4-02-e04",
+          "number": 4,
+          "title": "The Whole World Is Watching",
+          "source": "https://www.tvmaze.com/episodes/2053594/the-falcon-and-the-winter-soldier-1x04-the-whole-world-is-watching"
+        },
+        {
+          "id": "p4-02-e05",
+          "number": 5,
+          "title": "Truth",
+          "source": "https://www.tvmaze.com/episodes/2053595/the-falcon-and-the-winter-soldier-1x05-truth"
+        },
+        {
+          "id": "p4-02-e06",
+          "number": 6,
+          "title": "One World, One People",
+          "source": "https://www.tvmaze.com/episodes/2053596/the-falcon-and-the-winter-soldier-1x06-one-world-one-people"
+        }
+      ],
+      "episodeSource": "https://www.tvmaze.com/shows/41749/the-falcon-and-the-winter-soldier",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 8086,
+        "notLiked": 2072,
+        "percent": 80,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/the_falcon_and_the_winter_soldier/s01",
+        "checkedAt": "2026-10-19T02:36:59.028Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/the_falcon_and_the_winter_soldier/s01"
     },
     {
       "id": "p4-03",
       "phase": 4,
       "title": "Loki, season 1",
-      "year": "2021",
+      "year": "June 9, 2021",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/loki_lob_crd_04.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/loki_lob_crd_04.jpg",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p4-03-e01",
+          "number": 1,
+          "title": "Glorious Purpose",
+          "source": "https://www.tvmaze.com/episodes/1984092/loki-1x01-glorious-purpose"
+        },
+        {
+          "id": "p4-03-e02",
+          "number": 2,
+          "title": "The Variant",
+          "source": "https://www.tvmaze.com/episodes/2095474/loki-1x02-the-variant"
+        },
+        {
+          "id": "p4-03-e03",
+          "number": 3,
+          "title": "Lamentis",
+          "source": "https://www.tvmaze.com/episodes/2095475/loki-1x03-lamentis"
+        },
+        {
+          "id": "p4-03-e04",
+          "number": 4,
+          "title": "The Nexus Event",
+          "source": "https://www.tvmaze.com/episodes/2095476/loki-1x04-the-nexus-event"
+        },
+        {
+          "id": "p4-03-e05",
+          "number": 5,
+          "title": "Journey Into Mystery",
+          "source": "https://www.tvmaze.com/episodes/2095477/loki-1x05-journey-into-mystery"
+        },
+        {
+          "id": "p4-03-e06",
+          "number": 6,
+          "title": "For All Time. Always.",
+          "source": "https://www.tvmaze.com/episodes/2095478/loki-1x06-for-all-time-always"
+        }
+      ],
+      "episodeSource": "https://www.tvmaze.com/shows/41007/loki",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 10905,
+        "notLiked": 1154,
+        "percent": 90,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/loki/s01",
+        "checkedAt": "2026-10-19T02:36:59.066Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/loki/s01"
     },
     {
       "id": "p4-04",
       "phase": 4,
       "title": "Black Widow",
-      "year": "2021",
+      "year": "July 9, 2021",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/blackwidow_lob_crd_06.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/blackwidow_lob_crd_06.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 25167,
+        "notLiked": 7237,
+        "percent": 78,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/black_widow_2021",
+        "checkedAt": "2026-10-19T02:36:59.544Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/black_widow_2021"
     },
     {
       "id": "p4-05",
       "phase": 4,
       "title": "What If...?, season 1",
-      "year": "2021",
+      "year": "August 11, 2021",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/whatif_lob_crd_01.webp"
+      "poster": "https://cdn.marvel.com/content/1x/whatif_lob_crd_01.webp",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p4-05-e01",
+          "number": 1,
+          "title": "What If… Captain Carter Were the First Avenger?",
+          "source": "https://www.tvmaze.com/episodes/2127192/what-if-1x01-what-if-captain-carter-were-the-first-avenger"
+        },
+        {
+          "id": "p4-05-e02",
+          "number": 2,
+          "title": "What If… T'Challa Became a Star-Lord?",
+          "source": "https://www.tvmaze.com/episodes/2127214/what-if-1x02-what-if-tchalla-became-a-star-lord"
+        },
+        {
+          "id": "p4-05-e03",
+          "number": 3,
+          "title": "What If... The World Lost its Mightiest Heroes?",
+          "source": "https://www.tvmaze.com/episodes/2127216/what-if-1x03-what-if-the-world-lost-its-mightiest-heroes"
+        },
+        {
+          "id": "p4-05-e04",
+          "number": 4,
+          "title": "What If… Doctor Strange Lost His Heart Instead of His Hands?",
+          "source": "https://www.tvmaze.com/episodes/2127217/what-if-1x04-what-if-doctor-strange-lost-his-heart-instead-of-his-hands"
+        },
+        {
+          "id": "p4-05-e05",
+          "number": 5,
+          "title": "What If... Zombies!?",
+          "source": "https://www.tvmaze.com/episodes/2127218/what-if-1x05-what-if-zombies"
+        },
+        {
+          "id": "p4-05-e06",
+          "number": 6,
+          "title": "What If… Killmonger Rescued Tony Stark?",
+          "source": "https://www.tvmaze.com/episodes/2127220/what-if-1x06-what-if-killmonger-rescued-tony-stark"
+        },
+        {
+          "id": "p4-05-e07",
+          "number": 7,
+          "title": "What If… Thor Were an Only Child?",
+          "source": "https://www.tvmaze.com/episodes/2127221/what-if-1x07-what-if-thor-were-an-only-child"
+        },
+        {
+          "id": "p4-05-e08",
+          "number": 8,
+          "title": "What If... Ultron Won?",
+          "source": "https://www.tvmaze.com/episodes/2127222/what-if-1x08-what-if-ultron-won"
+        },
+        {
+          "id": "p4-05-e09",
+          "number": 9,
+          "title": "What If... The Watcher Broke His Oath?",
+          "source": "https://www.tvmaze.com/episodes/2127223/what-if-1x09-what-if-the-watcher-broke-his-oath"
+        }
+      ],
+      "episodeSource": "https://www.tvmaze.com/shows/41750/what-if",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 5395,
+        "notLiked": 517,
+        "percent": 91,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/what_if_/s01",
+        "checkedAt": "2026-10-19T02:37:30.976Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/what_if_/s01"
     },
     {
       "id": "p4-06",
       "phase": 4,
       "title": "Shang-Chi and the Legend of the Ten Rings",
-      "year": "2021",
+      "year": "September 3, 2021",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/shangchi_lob_crd_07.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/shangchi_lob_crd_07.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 33144,
+        "notLiked": 3026,
+        "percent": 92,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/shang_chi_and_the_legend_of_the_ten_rings",
+        "checkedAt": "2026-10-19T02:36:59.633Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/shang_chi_and_the_legend_of_the_ten_rings"
     },
     {
       "id": "p4-07",
       "phase": 4,
       "title": "Eternals",
-      "year": "2021",
+      "year": "November 5, 2021",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/eternals_lob_crd_06.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/eternals_lob_crd_06.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 35082,
+        "notLiked": 14613,
+        "percent": 71,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/eternals",
+        "checkedAt": "2026-10-19T02:36:59.957Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/eternals"
     },
     {
       "id": "p4-08",
       "phase": 4,
       "title": "Hawkeye",
-      "year": "2021",
+      "year": "November 24, 2021",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/hawkeye_lob_crd_04.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/hawkeye_lob_crd_04.jpg",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p4-08-e01",
+          "number": 1,
+          "title": "Never Meet Your Heroes",
+          "source": "https://www.tvmaze.com/episodes/2138092/hawkeye-1x01-never-meet-your-heroes"
+        },
+        {
+          "id": "p4-08-e02",
+          "number": 2,
+          "title": "Hide and Seek",
+          "source": "https://www.tvmaze.com/episodes/2194111/hawkeye-1x02-hide-and-seek"
+        },
+        {
+          "id": "p4-08-e03",
+          "number": 3,
+          "title": "Echoes",
+          "source": "https://www.tvmaze.com/episodes/2195971/hawkeye-1x03-echoes"
+        },
+        {
+          "id": "p4-08-e04",
+          "number": 4,
+          "title": "Partners, Am I Right?",
+          "source": "https://www.tvmaze.com/episodes/2196300/hawkeye-1x04-partners-am-i-right"
+        },
+        {
+          "id": "p4-08-e05",
+          "number": 5,
+          "title": "Ronin",
+          "source": "https://www.tvmaze.com/episodes/2196301/hawkeye-1x05-ronin"
+        },
+        {
+          "id": "p4-08-e06",
+          "number": 6,
+          "title": "So This Is Christmas?",
+          "source": "https://www.tvmaze.com/episodes/2196302/hawkeye-1x06-so-this-is-christmas"
+        }
+      ],
+      "episodeSource": "https://www.tvmaze.com/shows/43102/hawkeye",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 7012,
+        "notLiked": 954,
+        "percent": 88,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/hawkeye/s01",
+        "checkedAt": "2026-10-19T02:37:01.251Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/hawkeye/s01"
     },
     {
       "id": "p4-09",
       "phase": 4,
       "title": "Spider-Man: No Way Home",
-      "year": "2021",
+      "year": "December 17, 2021",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/spider-mannowayhome_lob_crd_03.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/spider-mannowayhome_lob_crd_03.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 93485,
+        "notLiked": 4199,
+        "percent": 96,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/spider_man_no_way_home",
+        "checkedAt": "2026-10-19T02:37:00.741Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/spider_man_no_way_home"
     },
     {
       "id": "p4-10",
       "phase": 4,
       "title": "Moon Knight",
-      "year": "2022",
+      "year": "March 30, 2022",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/moonknight_lob_crd_05.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/moonknight_lob_crd_05.jpg",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p4-10-e01",
+          "number": 1,
+          "title": "The Goldfish Problem",
+          "source": "https://www.tvmaze.com/episodes/2259875/moon-knight-1x01-the-goldfish-problem"
+        },
+        {
+          "id": "p4-10-e02",
+          "number": 2,
+          "title": "Summon the Suit",
+          "source": "https://www.tvmaze.com/episodes/2304469/moon-knight-1x02-summon-the-suit"
+        },
+        {
+          "id": "p4-10-e03",
+          "number": 3,
+          "title": "The Friendly Type",
+          "source": "https://www.tvmaze.com/episodes/2307772/moon-knight-1x03-the-friendly-type"
+        },
+        {
+          "id": "p4-10-e04",
+          "number": 4,
+          "title": "The Tomb",
+          "source": "https://www.tvmaze.com/episodes/2307773/moon-knight-1x04-the-tomb"
+        },
+        {
+          "id": "p4-10-e05",
+          "number": 5,
+          "title": "Asylum",
+          "source": "https://www.tvmaze.com/episodes/2307774/moon-knight-1x05-asylum"
+        },
+        {
+          "id": "p4-10-e06",
+          "number": 6,
+          "title": "Gods and Monsters",
+          "source": "https://www.tvmaze.com/episodes/2307775/moon-knight-1x06-gods-and-monsters"
+        }
+      ],
+      "episodeSource": "https://www.tvmaze.com/shows/43518/moon-knight",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 8507,
+        "notLiked": 1118,
+        "percent": 88,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/moon_knight/s01",
+        "checkedAt": "2026-10-19T02:37:01.185Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/moon_knight/s01"
     },
     {
       "id": "p4-11",
       "phase": 4,
       "title": "Doctor Strange in the Multiverse of Madness",
-      "year": "2022",
+      "year": "May 6, 2022",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/doctorstrangeinthemultiverseofmadness_lob_crd_02_3.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/doctorstrangeinthemultiverseofmadness_lob_crd_02_3.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 35406,
+        "notLiked": 11699,
+        "percent": 75,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/doctor_strange_in_the_multiverse_of_madness",
+        "checkedAt": "2026-10-19T02:37:01.357Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/doctor_strange_in_the_multiverse_of_madness"
     },
     {
       "id": "p4-12",
       "phase": 4,
       "title": "Ms. Marvel",
-      "year": "2022",
+      "year": "June 8, 2022",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/msmarvel_lob_crd_04.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/msmarvel_lob_crd_04.jpg",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p4-12-e01",
+          "number": 1,
+          "title": "Generation Why",
+          "source": "https://www.tvmaze.com/episodes/2296095/ms-marvel-1x01-generation-why"
+        },
+        {
+          "id": "p4-12-e02",
+          "number": 2,
+          "title": "Crushed",
+          "source": "https://www.tvmaze.com/episodes/2312017/ms-marvel-1x02-crushed"
+        },
+        {
+          "id": "p4-12-e03",
+          "number": 3,
+          "title": "Destined",
+          "source": "https://www.tvmaze.com/episodes/2332737/ms-marvel-1x03-destined"
+        },
+        {
+          "id": "p4-12-e04",
+          "number": 4,
+          "title": "Seeing Red",
+          "source": "https://www.tvmaze.com/episodes/2332743/ms-marvel-1x04-seeing-red"
+        },
+        {
+          "id": "p4-12-e05",
+          "number": 5,
+          "title": "Time and Again",
+          "source": "https://www.tvmaze.com/episodes/2340312/ms-marvel-1x05-time-and-again"
+        },
+        {
+          "id": "p4-12-e06",
+          "number": 6,
+          "title": "No Normal",
+          "source": "https://www.tvmaze.com/episodes/2340313/ms-marvel-1x06-no-normal"
+        }
+      ],
+      "episodeSource": "https://www.tvmaze.com/shows/43519/ms-marvel",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 8562,
+        "notLiked": 2191,
+        "percent": 80,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/ms_marvel/s01",
+        "checkedAt": "2026-10-19T02:37:01.480Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/ms_marvel/s01"
     },
     {
       "id": "p4-13",
       "phase": 4,
       "title": "Thor: Love and Thunder",
-      "year": "2022",
+      "year": "July 8, 2022",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/thorloveandthunder_lob_crd_04.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/thorloveandthunder_lob_crd_04.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 25151,
+        "notLiked": 19245,
+        "percent": 57,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/thor_love_and_thunder",
+        "checkedAt": "2026-10-19T02:37:01.525Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/thor_love_and_thunder"
+    },
+    {
+      "id": "p4-groot-s1",
+      "phase": 4,
+      "title": "I Am Groot, season 1",
+      "year": "August 10, 2022",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/iamgroot_lob_crd_04.webp",
+      "source": "https://www.marvel.com/tv-shows/i-am-groot/1",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p4-groot-s1-e01",
+          "number": 1,
+          "title": "Groot's First Steps",
+          "source": "https://www.tvmaze.com/episodes/2339961/i-am-groot-1x01-groots-first-steps"
+        },
+        {
+          "id": "p4-groot-s1-e02",
+          "number": 2,
+          "title": "The Little Guy",
+          "source": "https://www.tvmaze.com/episodes/2341078/i-am-groot-1x02-the-little-guy"
+        },
+        {
+          "id": "p4-groot-s1-e03",
+          "number": 3,
+          "title": "Groot's Pursuit",
+          "source": "https://www.tvmaze.com/episodes/2341079/i-am-groot-1x03-groots-pursuit"
+        },
+        {
+          "id": "p4-groot-s1-e04",
+          "number": 4,
+          "title": "Groot Takes a Bath",
+          "source": "https://www.tvmaze.com/episodes/2341080/i-am-groot-1x04-groot-takes-a-bath"
+        },
+        {
+          "id": "p4-groot-s1-e05",
+          "number": 5,
+          "title": "Magnum Opus",
+          "source": "https://www.tvmaze.com/episodes/2341081/i-am-groot-1x05-magnum-opus"
+        }
+      ],
+      "posterSource": "https://www.marvel.com/tv-shows/i-am-groot/1",
+      "episodeSource": "https://www.tvmaze.com/shows/52351/i-am-groot",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 385,
+        "notLiked": 133,
+        "percent": 74,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/i_am_groot/s01",
+        "checkedAt": "2026-10-19T02:37:01.973Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/i_am_groot/s01"
     },
     {
       "id": "p4-14",
       "phase": 4,
       "title": "She-Hulk: Attorney at Law",
-      "year": "2022",
+      "year": "August 18, 2022",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/shehulk_lob_crd_04.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/shehulk_lob_crd_04.jpg",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p4-14-e01",
+          "number": 1,
+          "title": "A Normal Amount of Rage",
+          "source": "https://www.tvmaze.com/episodes/2354151/she-hulk-attorney-at-law-1x01-a-normal-amount-of-rage"
+        },
+        {
+          "id": "p4-14-e02",
+          "number": 2,
+          "title": "Superhuman Law",
+          "source": "https://www.tvmaze.com/episodes/2354144/she-hulk-attorney-at-law-1x02-superhuman-law"
+        },
+        {
+          "id": "p4-14-e03",
+          "number": 3,
+          "title": "The People vs. Emil Blonsky",
+          "source": "https://www.tvmaze.com/episodes/2354142/she-hulk-attorney-at-law-1x03-the-people-vs-emil-blonsky"
+        },
+        {
+          "id": "p4-14-e04",
+          "number": 4,
+          "title": "Is This Not Real Magic?",
+          "source": "https://www.tvmaze.com/episodes/2354141/she-hulk-attorney-at-law-1x04-is-this-not-real-magic"
+        },
+        {
+          "id": "p4-14-e05",
+          "number": 5,
+          "title": "Mean, Green, and Straight Poured into These Jeans",
+          "source": "https://www.tvmaze.com/episodes/2354145/she-hulk-attorney-at-law-1x05-mean-green-and-straight-poured-into-these-jeans"
+        },
+        {
+          "id": "p4-14-e06",
+          "number": 6,
+          "title": "Just Jen",
+          "source": "https://www.tvmaze.com/episodes/2354146/she-hulk-attorney-at-law-1x06-just-jen"
+        },
+        {
+          "id": "p4-14-e07",
+          "number": 7,
+          "title": "The Retreat",
+          "source": "https://www.tvmaze.com/episodes/2354148/she-hulk-attorney-at-law-1x07-the-retreat"
+        },
+        {
+          "id": "p4-14-e08",
+          "number": 8,
+          "title": "Ribbit and Rip it",
+          "source": "https://www.tvmaze.com/episodes/2354150/she-hulk-attorney-at-law-1x08-ribbit-and-rip-it"
+        },
+        {
+          "id": "p4-14-e09",
+          "number": 9,
+          "title": "Whose Show Is This?",
+          "source": "https://www.tvmaze.com/episodes/2328682/she-hulk-attorney-at-law-1x09-whose-show-is-this"
+        }
+      ],
+      "episodeSource": "https://www.tvmaze.com/shows/43517/she-hulk-attorney-at-law",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 6693,
+        "notLiked": 14509,
+        "percent": 32,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/she_hulk_attorney_at_law/s01",
+        "checkedAt": "2026-10-19T02:37:02.656Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/she_hulk_attorney_at_law/s01"
     },
     {
       "id": "p4-15",
       "phase": 4,
       "title": "Werewolf by Night",
-      "year": "2022",
+      "year": "October 7, 2022",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/werewolfbynight_lob_crd_01.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/werewolfbynight_lob_crd_01.jpg",
+      "kind": "special",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 3381,
+        "notLiked": 448,
+        "percent": 88,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/werewolf_by_night",
+        "checkedAt": "2026-10-19T02:37:01.853Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/werewolf_by_night"
     },
     {
       "id": "p4-16",
       "phase": 4,
       "title": "Black Panther: Wakanda Forever",
-      "year": "2022",
+      "year": "November 11, 2022",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/blackpantherwakandaforever_lob_crd_06.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/blackpantherwakandaforever_lob_crd_06.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 33002,
+        "notLiked": 8966,
+        "percent": 79,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/black_panther_wakanda_forever",
+        "checkedAt": "2026-10-19T02:37:02.349Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/black_panther_wakanda_forever"
     },
     {
       "id": "p4-17",
       "phase": 4,
       "title": "The Guardians of the Galaxy Holiday Special",
-      "year": "2022",
+      "year": "November 25, 2022",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/theguardiansofthegalaxyholidayspecial_lob_crd_02.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/theguardiansofthegalaxyholidayspecial_lob_crd_02.jpg",
+      "kind": "special",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 2107,
+        "notLiked": 488,
+        "percent": 81,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/the_guardians_of_the_galaxy_holiday_special",
+        "checkedAt": "2026-10-19T02:37:03.123Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/the_guardians_of_the_galaxy_holiday_special"
     },
     {
       "id": "p5-01",
       "phase": 5,
       "title": "Ant-Man and the Wasp: Quantumania",
-      "year": "2023",
+      "year": "February 17, 2023",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/antmanandthewaspquantumania_lob_crd_03.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/antmanandthewaspquantumania_lob_crd_03.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 29523,
+        "notLiked": 11328,
+        "percent": 72,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/ant_man_and_the_wasp_quantumania",
+        "checkedAt": "2026-10-19T02:37:02.615Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/ant_man_and_the_wasp_quantumania"
     },
     {
       "id": "p5-02",
       "phase": 5,
       "title": "Guardians of the Galaxy Vol. 3",
-      "year": "2023",
+      "year": "May 5, 2023",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/guardiansofthegalaxyvolume3_lob_crd_03.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/guardiansofthegalaxyvolume3_lob_crd_03.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 40785,
+        "notLiked": 3426,
+        "percent": 92,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/guardians_of_the_galaxy_vol_3",
+        "checkedAt": "2026-10-19T02:37:03.338Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/guardians_of_the_galaxy_vol_3"
     },
     {
       "id": "p5-03",
       "phase": 5,
       "title": "Secret Invasion",
-      "year": "2023",
+      "year": "June 21, 2023",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/secretinvasion_lob_crd_04.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/secretinvasion_lob_crd_04.jpg",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p5-03-e01",
+          "number": 1,
+          "title": "Resurrection",
+          "source": "https://www.tvmaze.com/episodes/2513565/secret-invasion-1x01-resurrection"
+        },
+        {
+          "id": "p5-03-e02",
+          "number": 2,
+          "title": "Promises",
+          "source": "https://www.tvmaze.com/episodes/2514248/secret-invasion-1x02-promises"
+        },
+        {
+          "id": "p5-03-e03",
+          "number": 3,
+          "title": "Betrayed",
+          "source": "https://www.tvmaze.com/episodes/2514249/secret-invasion-1x03-betrayed"
+        },
+        {
+          "id": "p5-03-e04",
+          "number": 4,
+          "title": "Beloved",
+          "source": "https://www.tvmaze.com/episodes/2514250/secret-invasion-1x04-beloved"
+        },
+        {
+          "id": "p5-03-e05",
+          "number": 5,
+          "title": "Harvest",
+          "source": "https://www.tvmaze.com/episodes/2514251/secret-invasion-1x05-harvest"
+        },
+        {
+          "id": "p5-03-e06",
+          "number": 6,
+          "title": "Home",
+          "source": "https://www.tvmaze.com/episodes/2514252/secret-invasion-1x06-home"
+        }
+      ],
+      "episodeSource": "https://www.tvmaze.com/shows/52352/secret-invasion",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 2200,
+        "notLiked": 2955,
+        "percent": 43,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/secret_invasion/s01",
+        "checkedAt": "2026-10-19T02:37:04.190Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/secret_invasion/s01"
+    },
+    {
+      "id": "p5-groot-s2",
+      "phase": 5,
+      "title": "I Am Groot, season 2",
+      "year": "September 6, 2023",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/iamgroots2_lob_crd_01.webp",
+      "source": "https://www.marvel.com/tv-shows/i-am-groot/2",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p5-groot-s2-e01",
+          "number": 1,
+          "title": "Are You My Groot?",
+          "source": "https://www.tvmaze.com/episodes/2615900/i-am-groot-2x01-are-you-my-groot"
+        },
+        {
+          "id": "p5-groot-s2-e02",
+          "number": 2,
+          "title": "Groot Noses Around",
+          "source": "https://www.tvmaze.com/episodes/2624299/i-am-groot-2x02-groot-noses-around"
+        },
+        {
+          "id": "p5-groot-s2-e03",
+          "number": 3,
+          "title": "Groot's Snow Day",
+          "source": "https://www.tvmaze.com/episodes/2624300/i-am-groot-2x03-groots-snow-day"
+        },
+        {
+          "id": "p5-groot-s2-e04",
+          "number": 4,
+          "title": "Groot's Sweet Treat",
+          "source": "https://www.tvmaze.com/episodes/2624301/i-am-groot-2x04-groots-sweet-treat"
+        },
+        {
+          "id": "p5-groot-s2-e05",
+          "number": 5,
+          "title": "Groot and the Great Prophecy",
+          "source": "https://www.tvmaze.com/episodes/2624302/i-am-groot-2x05-groot-and-the-great-prophecy"
+        }
+      ],
+      "posterSource": "https://www.marvel.com/tv-shows/i-am-groot/2",
+      "episodeSource": "https://www.tvmaze.com/shows/52351/i-am-groot",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 223,
+        "notLiked": 72,
+        "percent": 76,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/i_am_groot/s02",
+        "checkedAt": "2026-10-19T02:37:03.983Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/i_am_groot/s02"
     },
     {
       "id": "p5-04",
       "phase": 5,
       "title": "Loki, season 2",
-      "year": "2023",
+      "year": "October 5, 2023",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/lokis2_lob_crd_04.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/lokis2_lob_crd_04.jpg",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p5-04-e01",
+          "number": 1,
+          "title": "Ouroboros",
+          "source": "https://www.tvmaze.com/episodes/2550051/loki-2x01-ouroboros"
+        },
+        {
+          "id": "p5-04-e02",
+          "number": 2,
+          "title": "Breaking Brad",
+          "source": "https://www.tvmaze.com/episodes/2648012/loki-2x02-breaking-brad"
+        },
+        {
+          "id": "p5-04-e03",
+          "number": 3,
+          "title": "1893",
+          "source": "https://www.tvmaze.com/episodes/2648013/loki-2x03-1893"
+        },
+        {
+          "id": "p5-04-e04",
+          "number": 4,
+          "title": "Heart of the TVA",
+          "source": "https://www.tvmaze.com/episodes/2648014/loki-2x04-heart-of-the-tva"
+        },
+        {
+          "id": "p5-04-e05",
+          "number": 5,
+          "title": "Science/Fiction",
+          "source": "https://www.tvmaze.com/episodes/2648015/loki-2x05-sciencefiction"
+        },
+        {
+          "id": "p5-04-e06",
+          "number": 6,
+          "title": "Glorious Purpose",
+          "source": "https://www.tvmaze.com/episodes/2648016/loki-2x06-glorious-purpose"
+        }
+      ],
+      "episodeSource": "https://www.tvmaze.com/shows/41007/loki",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 4957,
+        "notLiked": 1014,
+        "percent": 83,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/loki/s02",
+        "checkedAt": "2026-10-19T02:37:04.591Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/loki/s02"
     },
     {
       "id": "p5-05",
       "phase": 5,
       "title": "The Marvels",
-      "year": "2023",
+      "year": "November 10, 2023",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/themarvels_lob_crd_05.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/themarvels_lob_crd_05.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 14818,
+        "notLiked": 9014,
+        "percent": 62,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/the_marvels",
+        "checkedAt": "2026-10-19T02:37:04.439Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/the_marvels"
     },
     {
       "id": "p5-06",
       "phase": 5,
       "title": "What If...?, season 2",
-      "year": "2023",
+      "year": "December 22, 2023",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/whatifs2_lob_crd_02.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/whatifs2_lob_crd_02.jpg",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p5-06-e01",
+          "number": 1,
+          "title": "What If... Nebula Joined the Nova Corps?",
+          "source": "https://www.tvmaze.com/episodes/2688549/what-if-2x01-what-if-nebula-joined-the-nova-corps"
+        },
+        {
+          "id": "p5-06-e02",
+          "number": 2,
+          "title": "What If... Peter Quill Attacked Earth's Mightiest Heroes?",
+          "source": "https://www.tvmaze.com/episodes/2688554/what-if-2x02-what-if-peter-quill-attacked-earths-mightiest-heroes"
+        },
+        {
+          "id": "p5-06-e03",
+          "number": 3,
+          "title": "What If... Happy Hogan Saved Christmas?",
+          "source": "https://www.tvmaze.com/episodes/2688560/what-if-2x03-what-if-happy-hogan-saved-christmas"
+        },
+        {
+          "id": "p5-06-e04",
+          "number": 4,
+          "title": "What If... Iron Man Crashed into the Grandmaster?",
+          "source": "https://www.tvmaze.com/episodes/2688571/what-if-2x04-what-if-iron-man-crashed-into-the-grandmaster"
+        },
+        {
+          "id": "p5-06-e05",
+          "number": 5,
+          "title": "What If... Captain Carter Fought the Hydra Stomper?",
+          "source": "https://www.tvmaze.com/episodes/2463475/what-if-2x05-what-if-captain-carter-fought-the-hydra-stomper"
+        },
+        {
+          "id": "p5-06-e06",
+          "number": 6,
+          "title": "What If... Kahhori Reshaped the World?",
+          "source": "https://www.tvmaze.com/episodes/2688573/what-if-2x06-what-if-kahhori-reshaped-the-world"
+        },
+        {
+          "id": "p5-06-e07",
+          "number": 7,
+          "title": "What If... Hela Found the Ten Rings?",
+          "source": "https://www.tvmaze.com/episodes/2688574/what-if-2x07-what-if-hela-found-the-ten-rings"
+        },
+        {
+          "id": "p5-06-e08",
+          "number": 8,
+          "title": "What If... The Avengers Assembled in 1602?",
+          "source": "https://www.tvmaze.com/episodes/2688575/what-if-2x08-what-if-the-avengers-assembled-in-1602"
+        },
+        {
+          "id": "p5-06-e09",
+          "number": 9,
+          "title": "What If... Strange Supreme Intervened?",
+          "source": "https://www.tvmaze.com/episodes/2688576/what-if-2x09-what-if-strange-supreme-intervened"
+        }
+      ],
+      "episodeSource": "https://www.tvmaze.com/shows/41750/what-if",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 782,
+        "notLiked": 488,
+        "percent": 62,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/what_if_/s02",
+        "checkedAt": "2026-10-19T02:37:31.042Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/what_if_/s02"
     },
     {
       "id": "p5-07",
       "phase": 5,
       "title": "Echo",
-      "year": "2024",
+      "year": "January 9, 2024",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/echo_lob_crd_02.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/echo_lob_crd_02.jpg",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p5-07-e01",
+          "number": 1,
+          "title": "Chafa",
+          "source": "https://www.tvmaze.com/episodes/2680293/echo-1x01-chafa"
+        },
+        {
+          "id": "p5-07-e02",
+          "number": 2,
+          "title": "Lowak",
+          "source": "https://www.tvmaze.com/episodes/2680266/echo-1x02-lowak"
+        },
+        {
+          "id": "p5-07-e03",
+          "number": 3,
+          "title": "Tuklo",
+          "source": "https://www.tvmaze.com/episodes/2680267/echo-1x03-tuklo"
+        },
+        {
+          "id": "p5-07-e04",
+          "number": 4,
+          "title": "Taloa",
+          "source": "https://www.tvmaze.com/episodes/2680269/echo-1x04-taloa"
+        },
+        {
+          "id": "p5-07-e05",
+          "number": 5,
+          "title": "Maya",
+          "source": "https://www.tvmaze.com/episodes/2680270/echo-1x05-maya"
+        }
+      ],
+      "episodeSource": "https://www.tvmaze.com/shows/58950/echo",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 1987,
+        "notLiked": 1519,
+        "percent": 57,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/echo/s01",
+        "checkedAt": "2026-10-19T02:37:06.441Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/echo/s01"
+    },
+    {
+      "id": "p5-xmen-s1",
+      "phase": 5,
+      "title": "X-Men '97, season 1",
+      "year": "March 20, 2024",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/xmen97_lob_crd_02.webp",
+      "source": "https://www.marvel.com/tv-shows/animation/x-men-97/1",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p5-xmen-s1-e01",
+          "number": 1,
+          "title": "To Me, My X-Men",
+          "source": "https://www.tvmaze.com/episodes/2760697/x-men-97-1x01-to-me-my-x-men"
+        },
+        {
+          "id": "p5-xmen-s1-e02",
+          "number": 2,
+          "title": "Mutant Liberation Begins",
+          "source": "https://www.tvmaze.com/episodes/2791747/x-men-97-1x02-mutant-liberation-begins"
+        },
+        {
+          "id": "p5-xmen-s1-e03",
+          "number": 3,
+          "title": "Fire Made Flesh",
+          "source": "https://www.tvmaze.com/episodes/2791748/x-men-97-1x03-fire-made-flesh"
+        },
+        {
+          "id": "p5-xmen-s1-e04",
+          "number": 4,
+          "title": "Motendo / Lifedeath - Part 1",
+          "source": "https://www.tvmaze.com/episodes/2791749/x-men-97-1x04-motendo-lifedeath-part-1"
+        },
+        {
+          "id": "p5-xmen-s1-e05",
+          "number": 5,
+          "title": "Remember It",
+          "source": "https://www.tvmaze.com/episodes/2791750/x-men-97-1x05-remember-it"
+        },
+        {
+          "id": "p5-xmen-s1-e06",
+          "number": 6,
+          "title": "Lifedeath - Part 2",
+          "source": "https://www.tvmaze.com/episodes/2791751/x-men-97-1x06-lifedeath-part-2"
+        },
+        {
+          "id": "p5-xmen-s1-e07",
+          "number": 7,
+          "title": "Bright Eyes",
+          "source": "https://www.tvmaze.com/episodes/2791752/x-men-97-1x07-bright-eyes"
+        },
+        {
+          "id": "p5-xmen-s1-e08",
+          "number": 8,
+          "title": "Tolerance is Extinction - Part 1",
+          "source": "https://www.tvmaze.com/episodes/2791753/x-men-97-1x08-tolerance-is-extinction-part-1"
+        },
+        {
+          "id": "p5-xmen-s1-e09",
+          "number": 9,
+          "title": "Tolerance is Extinction - Part 2",
+          "source": "https://www.tvmaze.com/episodes/2791754/x-men-97-1x09-tolerance-is-extinction-part-2"
+        },
+        {
+          "id": "p5-xmen-s1-e10",
+          "number": 10,
+          "title": "Tolerance is Extinction - Part 3",
+          "source": "https://www.tvmaze.com/episodes/2791755/x-men-97-1x10-tolerance-is-extinction-part-3"
+        }
+      ],
+      "posterSource": "https://www.marvel.com/tv-shows/animation/x-men-97/1",
+      "episodeSource": "https://www.tvmaze.com/shows/58951/x-men-97",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 1443,
+        "notLiked": 136,
+        "percent": 91,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/x_men_97/s01",
+        "checkedAt": "2026-10-19T02:37:05.536Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/x_men_97/s01"
     },
     {
       "id": "p5-08",
       "phase": 5,
       "title": "Deadpool & Wolverine",
-      "year": "2024",
+      "year": "July 26, 2024",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/deadpoolandwolverine_lob_crd_03.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/deadpoolandwolverine_lob_crd_03.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 64515,
+        "notLiked": 6097,
+        "percent": 91,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/deadpool_and_wolverine",
+        "checkedAt": "2026-10-19T02:37:06.006Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/deadpool_and_wolverine"
     },
     {
       "id": "p5-09",
       "phase": 5,
       "title": "Agatha All Along",
-      "year": "2024",
+      "year": "September 18, 2024",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/agathaallalong_lob_crd_02.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/agathaallalong_lob_crd_02.jpg",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p5-09-e01",
+          "number": 1,
+          "title": "Seekest Thou the Road",
+          "source": "https://www.tvmaze.com/episodes/2869513/agatha-all-along-1x01-seekest-thou-the-road"
+        },
+        {
+          "id": "p5-09-e02",
+          "number": 2,
+          "title": "Circle Sewn with Fate Unlock Thy Hidden Gate",
+          "source": "https://www.tvmaze.com/episodes/2869514/agatha-all-along-1x02-circle-sewn-with-fate-unlock-thy-hidden-gate"
+        },
+        {
+          "id": "p5-09-e03",
+          "number": 3,
+          "title": "Through Many Miles of Tricks and Trials",
+          "source": "https://www.tvmaze.com/episodes/2975675/agatha-all-along-1x03-through-many-miles-of-tricks-and-trials"
+        },
+        {
+          "id": "p5-09-e04",
+          "number": 4,
+          "title": "If I Can't Reach You Let My Song Teach You",
+          "source": "https://www.tvmaze.com/episodes/2975676/agatha-all-along-1x04-if-i-cant-reach-you-let-my-song-teach-you"
+        },
+        {
+          "id": "p5-09-e05",
+          "number": 5,
+          "title": "Darkest Hour, Wake Thy Power",
+          "source": "https://www.tvmaze.com/episodes/2975677/agatha-all-along-1x05-darkest-hour-wake-thy-power"
+        },
+        {
+          "id": "p5-09-e06",
+          "number": 6,
+          "title": "Familiar by Thy Side",
+          "source": "https://www.tvmaze.com/episodes/2975678/agatha-all-along-1x06-familiar-by-thy-side"
+        },
+        {
+          "id": "p5-09-e07",
+          "number": 7,
+          "title": "Death's Hand in Mine",
+          "source": "https://www.tvmaze.com/episodes/2982007/agatha-all-along-1x07-deaths-hand-in-mine"
+        },
+        {
+          "id": "p5-09-e08",
+          "number": 8,
+          "title": "Follow Me My Friend To Glory at the End",
+          "source": "https://www.tvmaze.com/episodes/2982008/agatha-all-along-1x08-follow-me-my-friend-to-glory-at-the-end"
+        },
+        {
+          "id": "p5-09-e09",
+          "number": 9,
+          "title": "Maiden Mother Crone",
+          "source": "https://www.tvmaze.com/episodes/2982009/agatha-all-along-1x09-maiden-mother-crone"
+        }
+      ],
+      "episodeSource": "https://www.tvmaze.com/shows/58948/agatha-all-along",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 6185,
+        "notLiked": 1392,
+        "percent": 82,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/agatha_all_along/s01",
+        "checkedAt": "2026-10-19T02:37:05.823Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/agatha_all_along/s01"
+    },
+    {
+      "id": "p5-whatif-s3",
+      "phase": 5,
+      "title": "What If...?, season 3",
+      "year": "December 22, 2024",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/whatifs3_lob_crd_01.webp",
+      "source": "https://www.marvel.com/tv-shows/animation/what-if/3",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p5-whatif-s3-e01",
+          "number": 1,
+          "title": "What If... The Hulk Fought the Mech Avengers?",
+          "source": "https://www.tvmaze.com/episodes/3040310/what-if-3x01-what-if-the-hulk-fought-the-mech-avengers"
+        },
+        {
+          "id": "p5-whatif-s3-e02",
+          "number": 2,
+          "title": "What If... Agatha Went to Hollywood?",
+          "source": "https://www.tvmaze.com/episodes/3041374/what-if-3x02-what-if-agatha-went-to-hollywood"
+        },
+        {
+          "id": "p5-whatif-s3-e03",
+          "number": 3,
+          "title": "What If... The Red Guardian Stopped the Winter Soldier?",
+          "source": "https://www.tvmaze.com/episodes/3049924/what-if-3x03-what-if-the-red-guardian-stopped-the-winter-soldier"
+        },
+        {
+          "id": "p5-whatif-s3-e04",
+          "number": 4,
+          "title": "What If... Howard the Duck Got Hitched?",
+          "source": "https://www.tvmaze.com/episodes/3049925/what-if-3x04-what-if-howard-the-duck-got-hitched"
+        },
+        {
+          "id": "p5-whatif-s3-e05",
+          "number": 5,
+          "title": "What If... The Emergence Destroyed the Earth?",
+          "source": "https://www.tvmaze.com/episodes/3049926/what-if-3x05-what-if-the-emergence-destroyed-the-earth"
+        },
+        {
+          "id": "p5-whatif-s3-e06",
+          "number": 6,
+          "title": "What If... 1872?",
+          "source": "https://www.tvmaze.com/episodes/3049927/what-if-3x06-what-if-1872"
+        },
+        {
+          "id": "p5-whatif-s3-e07",
+          "number": 7,
+          "title": "What If... The Watcher Disappeared?",
+          "source": "https://www.tvmaze.com/episodes/3049928/what-if-3x07-what-if-the-watcher-disappeared"
+        },
+        {
+          "id": "p5-whatif-s3-e08",
+          "number": 8,
+          "title": "What If... What If?",
+          "source": "https://www.tvmaze.com/episodes/3049929/what-if-3x08-what-if-what-if"
+        }
+      ],
+      "posterSource": "https://www.marvel.com/tv-shows/animation/what-if/3",
+      "episodeSource": "https://www.tvmaze.com/shows/41750/what-if",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 313,
+        "notLiked": 647,
+        "percent": 33,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/what_if_/s03",
+        "checkedAt": "2026-10-19T02:37:31.384Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/what_if_/s03"
+    },
+    {
+      "id": "p5-spiderman-s1",
+      "phase": 5,
+      "title": "Your Friendly Neighborhood Spider-Man, season 1",
+      "year": "January 29, 2025",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/yourfriendlyneighborhoodspiderman_lob_crd_03_0.webp",
+      "source": "https://www.marvel.com/tv-shows/animation/your-friendly-neighborhood-spider-man/1",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p5-spiderman-s1-e01",
+          "number": 1,
+          "title": "Amazing Fantasy",
+          "source": "https://www.tvmaze.com/episodes/3040313/your-friendly-neighborhood-spider-man-1x01-amazing-fantasy"
+        },
+        {
+          "id": "p5-spiderman-s1-e02",
+          "number": 2,
+          "title": "The Parker Luck",
+          "source": "https://www.tvmaze.com/episodes/3115593/your-friendly-neighborhood-spider-man-1x02-the-parker-luck"
+        },
+        {
+          "id": "p5-spiderman-s1-e03",
+          "number": 3,
+          "title": "Secret Identity Crisis",
+          "source": "https://www.tvmaze.com/episodes/3115594/your-friendly-neighborhood-spider-man-1x03-secret-identity-crisis"
+        },
+        {
+          "id": "p5-spiderman-s1-e04",
+          "number": 4,
+          "title": "Hitting the Big Time",
+          "source": "https://www.tvmaze.com/episodes/3115595/your-friendly-neighborhood-spider-man-1x04-hitting-the-big-time"
+        },
+        {
+          "id": "p5-spiderman-s1-e05",
+          "number": 5,
+          "title": "The Unicorn Unleashed",
+          "source": "https://www.tvmaze.com/episodes/3115596/your-friendly-neighborhood-spider-man-1x05-the-unicorn-unleashed"
+        },
+        {
+          "id": "p5-spiderman-s1-e06",
+          "number": 6,
+          "title": "Duel with the Devil",
+          "source": "https://www.tvmaze.com/episodes/3115597/your-friendly-neighborhood-spider-man-1x06-duel-with-the-devil"
+        },
+        {
+          "id": "p5-spiderman-s1-e07",
+          "number": 7,
+          "title": "Scorpion Rising",
+          "source": "https://www.tvmaze.com/episodes/3115598/your-friendly-neighborhood-spider-man-1x07-scorpion-rising"
+        },
+        {
+          "id": "p5-spiderman-s1-e08",
+          "number": 8,
+          "title": "Tangled Web",
+          "source": "https://www.tvmaze.com/episodes/3115599/your-friendly-neighborhood-spider-man-1x08-tangled-web"
+        },
+        {
+          "id": "p5-spiderman-s1-e09",
+          "number": 9,
+          "title": "Hero or Menace",
+          "source": "https://www.tvmaze.com/episodes/3115600/your-friendly-neighborhood-spider-man-1x09-hero-or-menace"
+        },
+        {
+          "id": "p5-spiderman-s1-e10",
+          "number": 10,
+          "title": "If This Be My Destiny...",
+          "source": "https://www.tvmaze.com/episodes/3115601/your-friendly-neighborhood-spider-man-1x10-if-this-be-my-destiny"
+        }
+      ],
+      "posterSource": "https://www.marvel.com/tv-shows/animation/your-friendly-neighborhood-spider-man/1",
+      "episodeSource": "https://www.tvmaze.com/shows/58952/your-friendly-neighborhood-spider-man",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 1377,
+        "notLiked": 828,
+        "percent": 62,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/your_friendly_neighborhood_spider_man/s01",
+        "checkedAt": "2026-10-19T02:37:07.627Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/your_friendly_neighborhood_spider_man/s01"
     },
     {
       "id": "p5-10",
       "phase": 5,
       "title": "Captain America: Brave New World",
-      "year": "2025",
+      "year": "February 14, 2025",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/captainamericabravenewworld_lob_crd_05.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/captainamericabravenewworld_lob_crd_05.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 24142,
+        "notLiked": 11413,
+        "percent": 68,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/captain_america_brave_new_world",
+        "checkedAt": "2026-10-19T02:37:06.481Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/captain_america_brave_new_world"
     },
     {
       "id": "p5-11",
       "phase": 5,
       "title": "Daredevil: Born Again, season 1",
-      "year": "2025",
+      "year": "March 4, 2025",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/daredevilbornagain_lob_crd_03.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/daredevilbornagain_lob_crd_03.jpg",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p5-11-e01",
+          "number": 1,
+          "title": "Heaven’s Half Hour",
+          "source": "https://www.tvmaze.com/episodes/3031760/daredevil-born-again-1x01-heavens-half-hour"
+        },
+        {
+          "id": "p5-11-e02",
+          "number": 2,
+          "title": "Optics",
+          "source": "https://www.tvmaze.com/episodes/3147630/daredevil-born-again-1x02-optics"
+        },
+        {
+          "id": "p5-11-e03",
+          "number": 3,
+          "title": "The Hollow of His Hand",
+          "source": "https://www.tvmaze.com/episodes/3160192/daredevil-born-again-1x03-the-hollow-of-his-hand"
+        },
+        {
+          "id": "p5-11-e04",
+          "number": 4,
+          "title": "Sic Semper Systema",
+          "source": "https://www.tvmaze.com/episodes/3160193/daredevil-born-again-1x04-sic-semper-systema"
+        },
+        {
+          "id": "p5-11-e05",
+          "number": 5,
+          "title": "With Interest",
+          "source": "https://www.tvmaze.com/episodes/3160194/daredevil-born-again-1x05-with-interest"
+        },
+        {
+          "id": "p5-11-e06",
+          "number": 6,
+          "title": "Excessive Force",
+          "source": "https://www.tvmaze.com/episodes/3160195/daredevil-born-again-1x06-excessive-force"
+        },
+        {
+          "id": "p5-11-e07",
+          "number": 7,
+          "title": "Art for Art’s Sake",
+          "source": "https://www.tvmaze.com/episodes/3160197/daredevil-born-again-1x07-art-for-arts-sake"
+        },
+        {
+          "id": "p5-11-e08",
+          "number": 8,
+          "title": "Isle of Joy",
+          "source": "https://www.tvmaze.com/episodes/3160198/daredevil-born-again-1x08-isle-of-joy"
+        },
+        {
+          "id": "p5-11-e09",
+          "number": 9,
+          "title": "Straight to Hell",
+          "source": "https://www.tvmaze.com/episodes/3160200/daredevil-born-again-1x09-straight-to-hell"
+        }
+      ],
+      "episodeSource": "https://www.tvmaze.com/shows/63234/daredevil-born-again",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 3169,
+        "notLiked": 866,
+        "percent": 79,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/daredevil_born_again/s01",
+        "checkedAt": "2026-10-19T02:37:06.858Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/daredevil_born_again/s01"
     },
     {
       "id": "p5-12",
       "phase": 5,
       "title": "Thunderbolts*",
-      "year": "2025",
+      "year": "May 2, 2025",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/thenewavengers_lob_crd_01.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/thenewavengers_lob_crd_01.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 35011,
+        "notLiked": 3895,
+        "percent": 90,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/thunderbolts",
+        "checkedAt": "2026-10-19T02:37:06.821Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/thunderbolts"
     },
     {
       "id": "p5-13",
       "phase": 5,
       "title": "Ironheart",
-      "year": "2025",
+      "year": "June 24, 2025",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/ironheart_lob_crd_04.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/ironheart_lob_crd_04.jpg",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p5-13-e01",
+          "number": 1,
+          "title": "Take Me Home",
+          "source": "https://www.tvmaze.com/episodes/3040314/ironheart-1x01-take-me-home"
+        },
+        {
+          "id": "p5-13-e02",
+          "number": 2,
+          "title": "Will the Real Natalie Please Stand Up?",
+          "source": "https://www.tvmaze.com/episodes/3041369/ironheart-1x02-will-the-real-natalie-please-stand-up"
+        },
+        {
+          "id": "p5-13-e03",
+          "number": 3,
+          "title": "We in Danger, Girl",
+          "source": "https://www.tvmaze.com/episodes/3041370/ironheart-1x03-we-in-danger-girl"
+        },
+        {
+          "id": "p5-13-e04",
+          "number": 4,
+          "title": "Bad Magic",
+          "source": "https://www.tvmaze.com/episodes/3278249/ironheart-1x04-bad-magic"
+        },
+        {
+          "id": "p5-13-e05",
+          "number": 5,
+          "title": "Karma's a Glitch",
+          "source": "https://www.tvmaze.com/episodes/3278258/ironheart-1x05-karmas-a-glitch"
+        },
+        {
+          "id": "p5-13-e06",
+          "number": 6,
+          "title": "The Past Is the Past",
+          "source": "https://www.tvmaze.com/episodes/3278268/ironheart-1x06-the-past-is-the-past"
+        }
+      ],
+      "episodeSource": "https://www.tvmaze.com/shows/47859/ironheart",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 3602,
+        "notLiked": 4252,
+        "percent": 46,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/ironheart/s01",
+        "checkedAt": "2026-10-19T02:37:07.222Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/ironheart/s01"
     },
     {
       "id": "p6-01",
       "phase": 6,
       "title": "The Fantastic Four: First Steps",
-      "year": "2025",
+      "year": "July 25, 2025",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/thefantasticfourfirststeps_lob_crd_03.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/thefantasticfourfirststeps_lob_crd_03.jpg",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 37452,
+        "notLiked": 6745,
+        "percent": 85,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/the_fantastic_four_first_steps",
+        "checkedAt": "2026-10-19T02:37:07.426Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/m/the_fantastic_four_first_steps"
     },
     {
       "id": "p6-02",
       "phase": 6,
       "title": "Eyes of Wakanda",
-      "year": "2025",
+      "year": "August 1, 2025",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/eyesofwakanda_lob_crd_02.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/eyesofwakanda_lob_crd_02.jpg",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p6-02-e01",
+          "number": 1,
+          "title": "Into the Lion's Den",
+          "source": "https://www.tvmaze.com/episodes/3040319/eyes-of-wakanda-1x01-into-the-lions-den"
+        },
+        {
+          "id": "p6-02-e02",
+          "number": 2,
+          "title": "Legends and Lies",
+          "source": "https://www.tvmaze.com/episodes/3041375/eyes-of-wakanda-1x02-legends-and-lies"
+        },
+        {
+          "id": "p6-02-e03",
+          "number": 3,
+          "title": "Lost and Found",
+          "source": "https://www.tvmaze.com/episodes/3041376/eyes-of-wakanda-1x03-lost-and-found"
+        },
+        {
+          "id": "p6-02-e04",
+          "number": 4,
+          "title": "The Last Panther",
+          "source": "https://www.tvmaze.com/episodes/3041377/eyes-of-wakanda-1x04-the-last-panther"
+        }
+      ],
+      "episodeSource": "https://www.tvmaze.com/shows/73415/eyes-of-wakanda",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 257,
+        "notLiked": 250,
+        "percent": 51,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/eyes_of_wakanda/s01",
+        "checkedAt": "2026-10-19T02:37:08.276Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/eyes_of_wakanda/s01"
     },
     {
       "id": "p6-03",
       "phase": 6,
       "title": "Marvel Zombies",
-      "year": "2025",
+      "year": "September 24, 2025",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/marvelzombies_lob_crd_03.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/marvelzombies_lob_crd_03.jpg",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p6-03-e01",
+          "number": 1,
+          "title": "Episode 1",
+          "source": "https://www.tvmaze.com/episodes/3257653/marvel-zombies-1x01-episode-1"
+        },
+        {
+          "id": "p6-03-e02",
+          "number": 2,
+          "title": "Episode 2",
+          "source": "https://www.tvmaze.com/episodes/3331134/marvel-zombies-1x02-episode-2"
+        },
+        {
+          "id": "p6-03-e03",
+          "number": 3,
+          "title": "Episode 3",
+          "source": "https://www.tvmaze.com/episodes/3331135/marvel-zombies-1x03-episode-3"
+        },
+        {
+          "id": "p6-03-e04",
+          "number": 4,
+          "title": "Episode 4",
+          "source": "https://www.tvmaze.com/episodes/3331136/marvel-zombies-1x04-episode-4"
+        }
+      ],
+      "episodeSource": "https://www.tvmaze.com/shows/58949/marvel-zombies",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 776,
+        "notLiked": 390,
+        "percent": 67,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/marvel_zombies/s01",
+        "checkedAt": "2026-10-19T02:37:08.676Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/marvel_zombies/s01"
     },
     {
       "id": "p6-04",
       "phase": 6,
       "title": "Wonder Man",
-      "year": "2026",
+      "year": "January 27, 2026",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/wonderman_lob_crd_03.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/wonderman_lob_crd_03.jpg",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p6-04-e01",
+          "number": 1,
+          "title": "Matinee",
+          "source": "https://www.tvmaze.com/episodes/3394714/wonder-man-1x01-matinee"
+        },
+        {
+          "id": "p6-04-e02",
+          "number": 2,
+          "title": "Self-Tape",
+          "source": "https://www.tvmaze.com/episodes/3521230/wonder-man-1x02-self-tape"
+        },
+        {
+          "id": "p6-04-e03",
+          "number": 3,
+          "title": "Pacoima",
+          "source": "https://www.tvmaze.com/episodes/3521231/wonder-man-1x03-pacoima"
+        },
+        {
+          "id": "p6-04-e04",
+          "number": 4,
+          "title": "Doorman",
+          "source": "https://www.tvmaze.com/episodes/3521232/wonder-man-1x04-doorman"
+        },
+        {
+          "id": "p6-04-e05",
+          "number": 5,
+          "title": "Found Footage",
+          "source": "https://www.tvmaze.com/episodes/3521233/wonder-man-1x05-found-footage"
+        },
+        {
+          "id": "p6-04-e06",
+          "number": 6,
+          "title": "Callback",
+          "source": "https://www.tvmaze.com/episodes/3521234/wonder-man-1x06-callback"
+        },
+        {
+          "id": "p6-04-e07",
+          "number": 7,
+          "title": "Kathy Friedman",
+          "source": "https://www.tvmaze.com/episodes/3521235/wonder-man-1x07-kathy-friedman"
+        },
+        {
+          "id": "p6-04-e08",
+          "number": 8,
+          "title": "Yucca Valley",
+          "source": "https://www.tvmaze.com/episodes/3521236/wonder-man-1x08-yucca-valley"
+        }
+      ],
+      "episodeSource": "https://www.tvmaze.com/shows/62569/wonder-man",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 1747,
+        "notLiked": 266,
+        "percent": 87,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/wonder_man/s01",
+        "checkedAt": "2026-10-19T02:37:09.222Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/wonder_man/s01"
     },
     {
       "id": "p6-05",
       "phase": 6,
       "title": "Daredevil: Born Again, season 2",
-      "year": "2026",
+      "year": "March 24, 2026",
       "optional": true,
-      "poster": "https://cdn.marvel.com/content/1x/daredevilbornagains2_lob_crd_01.webp"
+      "poster": "https://cdn.marvel.com/content/1x/daredevilbornagains2_lob_crd_01.webp",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p6-05-e01",
+          "number": 1,
+          "title": "The Northern Star",
+          "source": "https://www.tvmaze.com/episodes/3449248/daredevil-born-again-2x01-the-northern-star"
+        },
+        {
+          "id": "p6-05-e02",
+          "number": 2,
+          "title": "Shoot the Moon",
+          "source": "https://www.tvmaze.com/episodes/3562592/daredevil-born-again-2x02-shoot-the-moon"
+        },
+        {
+          "id": "p6-05-e03",
+          "number": 3,
+          "title": "The Scales & the Sword",
+          "source": "https://www.tvmaze.com/episodes/3562593/daredevil-born-again-2x03-the-scales-the-sword"
+        },
+        {
+          "id": "p6-05-e04",
+          "number": 4,
+          "title": "Gloves Off",
+          "source": "https://www.tvmaze.com/episodes/3562594/daredevil-born-again-2x04-gloves-off"
+        },
+        {
+          "id": "p6-05-e05",
+          "number": 5,
+          "title": "The Grand Design",
+          "source": "https://www.tvmaze.com/episodes/3562595/daredevil-born-again-2x05-the-grand-design"
+        },
+        {
+          "id": "p6-05-e06",
+          "number": 6,
+          "title": "Requiem",
+          "source": "https://www.tvmaze.com/episodes/3562596/daredevil-born-again-2x06-requiem"
+        },
+        {
+          "id": "p6-05-e07",
+          "number": 7,
+          "title": "The Hateful Darkness",
+          "source": "https://www.tvmaze.com/episodes/3562597/daredevil-born-again-2x07-the-hateful-darkness"
+        },
+        {
+          "id": "p6-05-e08",
+          "number": 8,
+          "title": "The Southern Cross",
+          "source": "https://www.tvmaze.com/episodes/3562598/daredevil-born-again-2x08-the-southern-cross"
+        }
+      ],
+      "episodeSource": "https://www.tvmaze.com/shows/63234/daredevil-born-again",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 1049,
+        "notLiked": 183,
+        "percent": 85,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/daredevil_born_again/s02",
+        "checkedAt": "2026-10-19T02:37:08.614Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/daredevil_born_again/s02"
+    },
+    {
+      "id": "p6-punisher",
+      "phase": 6,
+      "title": "The Punisher: One Last Kill",
+      "year": "May 12, 2026",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/thepunisheronelastkill_lob_crd_01.webp",
+      "source": "https://www.marvel.com/tv-shows/the-punisher-one-last-kill/1",
+      "kind": "special",
+      "posterSource": "https://www.marvel.com/tv-shows/the-punisher-one-last-kill/1",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 1273,
+        "notLiked": 356,
+        "percent": 78,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/the_punisher_one_last_kill",
+        "checkedAt": "2026-10-19T02:37:09.042Z"
+      }
+    },
+    {
+      "id": "p6-xmen-s2",
+      "phase": 6,
+      "title": "X-Men '97, season 2",
+      "year": "July 1, 2026",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/xmen97s2_lob_crd_02_0.webp",
+      "source": "https://www.marvel.com/tv-shows/animation/x-men-97/2",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p6-xmen-s2-e01",
+          "number": 1,
+          "title": "Days of Past Future",
+          "source": "https://www.tvmaze.com/episodes/3626980/x-men-97-2x01-days-of-past-future"
+        },
+        {
+          "id": "p6-xmen-s2-e02",
+          "number": 2,
+          "title": "A Force to be Reckoned With",
+          "source": "https://www.tvmaze.com/episodes/3651107/x-men-97-2x02-a-force-to-be-reckoned-with"
+        },
+        {
+          "id": "p6-xmen-s2-e03",
+          "number": 3,
+          "title": "Rise of Apocalypse – Part 1",
+          "source": "https://www.tvmaze.com/episodes/3651108/x-men-97-2x03-rise-of-apocalypse-part-1"
+        },
+        {
+          "id": "p6-xmen-s2-e04",
+          "number": 4,
+          "title": "Rise of Apocalypse – Part 2",
+          "source": "https://www.tvmaze.com/episodes/3652065/x-men-97-2x04-rise-of-apocalypse-part-2"
+        },
+        {
+          "id": "p6-xmen-s2-e05",
+          "number": 5,
+          "title": "Weapon X, Lies, and DVDs",
+          "source": "https://www.tvmaze.com/episodes/3652066/x-men-97-2x05-weapon-x-lies-and-dvds"
+        },
+        {
+          "id": "p6-xmen-s2-e06",
+          "number": 6,
+          "title": "Danger.exe",
+          "source": "https://www.tvmaze.com/episodes/3652067/x-men-97-2x06-dangerexe"
+        },
+        {
+          "id": "p6-xmen-s2-e07",
+          "number": 7,
+          "title": "Strange Land, Savage Heart",
+          "source": "https://www.tvmaze.com/episodes/3652068/x-men-97-2x07-strange-land-savage-heart"
+        },
+        {
+          "id": "p6-xmen-s2-e08",
+          "number": 8,
+          "title": "The Dead Man's Hand",
+          "source": "https://www.tvmaze.com/episodes/3652069/x-men-97-2x08-the-dead-mans-hand"
+        },
+        {
+          "id": "p6-xmen-s2-e09",
+          "number": 9,
+          "title": "Survival of the Fittest",
+          "source": "https://www.tvmaze.com/episodes/3652070/x-men-97-2x09-survival-of-the-fittest"
+        }
+      ],
+      "posterSource": "https://www.marvel.com/tv-shows/animation/x-men-97/2",
+      "episodeSource": "https://www.tvmaze.com/shows/58951/x-men-97",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 359,
+        "notLiked": 113,
+        "percent": 76,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/x_men_97/s02",
+        "checkedAt": "2026-10-19T02:37:09.985Z"
+      },
+      "releaseDateSource": "https://www.rottentomatoes.com/tv/x_men_97/s02"
     },
     {
       "id": "p6-06",
@@ -471,7 +2398,96 @@
       "title": "Spider-Man: Brand New Day",
       "year": "July 31, 2026",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x_masonry/spidermanbrandnewday_online_1080x1350_ninjas_02.webp"
+      "poster": "https://cdn.marvel.com/content/1x_masonry/spidermanbrandnewday_online_1080x1350_ninjas_02.webp",
+      "kind": "movie",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 52824,
+        "notLiked": 2506,
+        "percent": 95,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/m/spider_man_brand_new_day",
+        "checkedAt": "2026-10-19T02:37:10.104Z"
+      }
+    },
+    {
+      "id": "p6-visionquest",
+      "phase": 6,
+      "title": "VisionQuest",
+      "year": "October 14, 2026",
+      "optional": true,
+      "poster": "https://cdn.marvel.com/content/1x/visionquest_lob_crd_02.webp",
+      "source": "https://www.disneyplus.com/en-gb/explore/articles/marvel-visionquest",
+      "kind": "series",
+      "episodes": [
+        {
+          "id": "p6-visionquest-e01",
+          "number": 1,
+          "title": "No Strings",
+          "releaseDate": "2026-10-14",
+          "source": "https://www.tvmaze.com/episodes/3616304/visionquest-1x01-no-strings"
+        },
+        {
+          "id": "p6-visionquest-e02",
+          "number": 2,
+          "title": "Theseus",
+          "releaseDate": "2026-10-14",
+          "source": "https://www.tvmaze.com/episodes/3616305/visionquest-1x02-theseus"
+        },
+        {
+          "id": "p6-visionquest-e03",
+          "number": 3,
+          "title": "Reboot",
+          "releaseDate": "2026-10-21",
+          "source": "https://www.tvmaze.com/episodes/3616306/visionquest-1x03-reboot"
+        },
+        {
+          "id": "p6-visionquest-e04",
+          "number": 4,
+          "title": "Malware",
+          "releaseDate": "2026-10-21",
+          "source": "https://www.tvmaze.com/episodes/3616307/visionquest-1x04-malware"
+        },
+        {
+          "id": "p6-visionquest-e05",
+          "number": 5,
+          "title": "Firewall",
+          "releaseDate": "2026-10-28",
+          "source": "https://www.tvmaze.com/episodes/3616308/visionquest-1x05-firewall"
+        },
+        {
+          "id": "p6-visionquest-e06",
+          "number": 6,
+          "title": "Deadlock",
+          "releaseDate": "2026-10-28",
+          "source": "https://www.tvmaze.com/episodes/3616309/visionquest-1x06-deadlock"
+        },
+        {
+          "id": "p6-visionquest-e07",
+          "number": 7,
+          "title": "Immolation",
+          "releaseDate": "2026-11-04",
+          "source": "https://www.tvmaze.com/episodes/3616310/visionquest-1x07-immolation"
+        },
+        {
+          "id": "p6-visionquest-e08",
+          "number": 8,
+          "title": "Forever",
+          "releaseDate": "2026-11-11",
+          "source": "https://www.tvmaze.com/episodes/3616311/visionquest-1x08-forever"
+        }
+      ],
+      "posterSource": "https://www.marvel.com/tv-shows/visionquest/1",
+      "episodeSource": "https://www.tvmaze.com/shows/64950/visionquest",
+      "audience": {
+        "source": "Rotten Tomatoes",
+        "liked": 343,
+        "notLiked": 63,
+        "percent": 84,
+        "population": "All Audience",
+        "url": "https://www.rottentomatoes.com/tv/visionquest/s01",
+        "checkedAt": "2026-10-19T02:37:09.497Z"
+      }
     },
     {
       "id": "p6-07",
@@ -479,7 +2495,9 @@
       "title": "Avengers: Doomsday",
       "year": "December 18, 2026",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/avengersdoomsday_lob_crd_02.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/avengersdoomsday_lob_crd_02.jpg",
+      "kind": "movie",
+      "upcoming": true
     },
     {
       "id": "p6-08",
@@ -487,7 +2505,10 @@
       "title": "Avengers: Secret Wars",
       "year": "December 17, 2027",
       "optional": false,
-      "poster": "https://cdn.marvel.com/content/1x/avengerssecretwars_lob_crd_02.jpg"
+      "poster": "https://cdn.marvel.com/content/1x/avengerssecretwars_lob_crd_02.jpg",
+      "kind": "movie",
+      "upcoming": true
     }
-  ]
+  ],
+  "updatedAt": "2026-10-19"
 }
